@@ -1,0 +1,46 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-04-03 12:25:09
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-04-03 13:10:04
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day06/06_包含块.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>包含块</title>
+</head>
+<body>
+
+  <!--
+    box1 是被 box2 包含的块元素
+    box2 是被 box3 包含的块元素
+    box1 是被 span 包含的块元素
+   -->
+  <div class="box1">
+    <div class="box2">
+      <div class="box3"></div>
+    </div>
+    <span></span>
+  </div>
+
+  <!--
+    box4 是被 box5 包含的块元素
+    box5块元素的默认宽度会将 父元素box4 撑满
+   -->
+  <div class="box4">
+    <span>
+      <div class="box5"></div>
+    </span>
+  </div>
+
+  <pre>
+    包含块（containing block）
+      - 在文档流中，包含块就是离当前元素最近的祖先块元素
+  </pre>
+</body>
+</html>

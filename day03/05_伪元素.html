@@ -1,0 +1,101 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-03-27 14:34:31
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-03-27 15:12:13
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day03/05_伪元素.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>伪元素</title>
+  <style>
+    div::before {
+      content: 'before ';
+      color: green;
+    }
+
+    div::after {
+      content: ' after';
+      color: blue;
+    }
+
+    section::before {
+      content: '> ';
+      color: deepskyblue;
+    }
+
+    p::first-letter {
+      font-size: 30px;
+    }
+
+    p::first-line {
+      background-color: aqua;
+    }
+
+    p::selection {
+      color: red;
+      background-color: yellow;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div>我是一个div</div>
+
+  <section>第一项</section>
+  <section>第二项</section>
+  <section>第三项</section>
+  <section>第四项</section>
+  <section>第五项</section>
+
+  <p>
+    家家争唱饮水词，纳兰心事几人知。
+
+    在清代，最知名的词人，当属纳兰容若。
+
+    他以天纵才华，入骨的深情，写下许多经典的诗词，三百多年后，当我们细细回味，依然动人心弦。
+
+    纳兰容若最美的30个诗词，所谓一眼万年，也不过如此！
+  </p>
+
+  <p>
+    Families sang the song drinking water, how many people knew about Nalan's mind.
+
+    In the Qing Dynasty, the most famous poet was Nalan Rongruo.
+
+    He wrote many classic poems with great talent and deep affection. After more than 300 years, when we think about it
+    carefully, they are still touching.
+
+    Nalan Rongruo's 30 most beautiful poems, the so-called ten thousand years at a glance, is nothing more than that!
+  </p>
+
+  <pre>
+    伪元素：
+      - 伪元素是表示的页面中特殊的位置
+      - 伪元素是使用 :: 开头
+      ::before
+        - 元素的开始位置（开始标签之后）
+      ::after
+        - 元素的结束位置（结束标签之前）
+      ::first-letter
+        - 首字母
+      ::first-line
+        第一行
+      ::selection
+        - 选中的文字的样式
+
+    通过 before、after 可以选中元素开始或结束的位置，从而为其添加内容。
+    注意：这里的内容是通过 CSS 添加的，不算网页中的正式内容（比如不能复制）。
+      1. 通过它可以添加一些统一的符号
+      2. 也可以在特殊场景下通过它们来调整一下页面的样式
+  </pre>
+</body>
+
+</html>

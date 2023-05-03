@@ -1,0 +1,80 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-04-14 13:36:37
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-04-14 14:38:24
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day10/09_表格.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>表格</title>
+  <style>
+    table {
+      border: 1px solid #333;
+      border-collapse: collapse;
+      width: 50%;
+    }
+
+    td {
+      border: 1px solid #333;
+    }
+
+    /* 可行 */
+    /* table tr:hover {
+      background: #ccc;
+    } */
+
+    /* 不可行 */
+    /* table > tr:hover {
+      background: #ccc;
+    } */
+
+    /* 可行 */
+    tbody>tr:hover {
+      background: #ccc;
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+    <!-- <tbody> -->
+      <tr>
+        <td>A</td>
+        <td>B</td>
+        <td>C</td>
+        <td>D</td>
+      </tr>
+      <tr>
+        <td>A</td>
+        <td>B</td>
+        <td>C</td>
+        <td>D</td>
+      </tr>
+      <tr>
+        <td>A</td>
+        <td>B</td>
+        <td>C</td>
+        <td>D</td>
+      </tr>
+      <tr>
+        <td>A</td>
+        <td>B</td>
+        <td>C</td>
+        <td>D</td>
+      </tr>
+    <!-- </tbody> -->
+  </table>
+
+  <pre>
+    如果在 table 没有写 tbody ，则浏览器会自动创建 tbody，并将所有的 tr 都放入到 tbody
+  </pre>
+</body>
+
+</html>

@@ -1,0 +1,120 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-03-30 10:08:17
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-03-30 12:09:42
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day05/01_练习.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>练习</title>
+  <style>
+    /*
+      清除元素的默认样式，网页中的很多的元素都会自带一些默认样式
+     */
+    * {
+      /* 重置元素的 padding 和 margin */
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background: pink;
+    }
+
+    /* 方法一 */
+    ul {
+      /* 去掉项目符号 */
+      list-style: none;
+
+      width: 190px;
+      height: 470px;
+      background-color: #fff;
+    }
+
+    /* .box {
+      border: 10px red solid;
+    } */
+
+    img {
+      /* 解决有基线的问题：vertical-align 垂直对齐的方式。
+         只对图片、文字或者行内元素有效果，默认值 baseline
+       */
+      vertical-align: top;
+
+      height: 150px;
+    }
+
+    /* 这样写的好处是：在 ul 没有设置高度的时候，最后一个 li 不会有多余的10px影响其他元素 */
+    li:nth-child(2) {
+      margin: 10px 0;
+    }
+
+    /* 方法二 */
+    div {
+      width: 190px;
+      height: 470px;
+      background-color: #fff;
+    }
+
+    a {
+      text-decoration: none;
+      display: inline-block;
+      height: 150px;
+    }
+    a:nth-child(2) {
+      margin: 10px 0;
+    }
+  </style>
+</head>
+<!-- 定义结构 -->
+
+<body>
+
+  <!-- 在网页中，图片的对齐方式和文字是一样的，默认都是沿着元素的基线对齐 -->
+  <!-- <div class="box">
+    <img src="./images/1f328ec6ec7a0cf4.png.avif" alt="" srcset="">
+    今天的太阳猫猫亮～～
+    Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on screen, on paper, in speech, or on other media.
+  </div> -->
+
+  <!-- 方法一 -->
+  <ul>
+    <li>
+      <a href="#">
+        <img src="./images/153b84f6bd146a63.png.avif" alt="" srcset="">
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="./images/1f328ec6ec7a0cf4.png.avif" alt="" srcset="">
+      </a>
+    </li>
+    <li>
+      <a href="#">
+        <img src="./images/9166f7acc0b72062.png.avif" alt="" srcset="">
+      </a>
+    </li>
+  </ul>
+  <hr>
+  <!-- 方法二 -->
+  <div>
+    <a href="#">
+      <img src="./images/153b84f6bd146a63.png.avif" alt="" srcset="">
+    </a>
+    <a href="#">
+      <img src="./images/1f328ec6ec7a0cf4.png.avif" alt="" srcset="">
+    </a>
+    <a href="#">
+      <img src="./images/9166f7acc0b72062.png.avif" alt="" srcset="">
+    </a>
+  </div>
+</body>
+
+</html>

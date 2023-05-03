@@ -1,0 +1,66 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-03-29 15:04:37
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-03-29 15:31:45
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day04/08_外边距.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>外边距</title>
+  <style>
+    .box1 {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      margin-bottom: 100px;
+    }
+
+    .box2 {
+      width: 200px;
+      height: 200px;
+      background-color: blue;
+      margin-top: 200px;
+    }
+
+    .box4 {
+      width: 300px;
+      height: 300px;
+      background-color: deeppink;
+
+      /* 将box5 往下移100px */
+      box-sizing: border-box;
+      padding-top: 100px;
+    }
+
+    .box5 {
+      width: 100px;
+      height: 100px;
+      background-color: green;
+      /* margin-top: 100px; */
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box4">
+    <div class="box5"></div>
+  </div>
+  <hr>
+  <div class="box1"></div>
+  <div class="box2"></div>
+  <pre>
+    外边距的折叠
+      - 垂直方向的相邻外边距会发生外边距折叠的现象
+          兄弟元素间外边距会取较大值（这样设计是为了避免两个元素之间的距离）
+          父子元素间子元素外边距会传递给父元素，这样会到导致布局出问题，需要避免该问题
+  </pre>
+</body>
+
+</html>

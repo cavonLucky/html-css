@@ -1,0 +1,96 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-04-15 12:26:43
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-04-15 12:57:06
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day11/02_表单.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>表单</title>
+</head>
+
+<body>
+  <form action="../day10/target.html">
+
+    <div>
+      <label for="username">用户名：</label>
+      <input type="text" id="username" name="username" placeholder="请输入用户名" value="admin">
+    </div>
+    <div>
+      昵称：<input type="text" id="" placeholder="请输入昵称" value="cc" readonly>
+    </div>
+    <div>
+      密码：<input type="password" name="password" id="">
+    </div>
+    <div>
+      性别：
+
+      <input type="radio" name="gender" value="1" id="male">
+      <label for="male">男</label>
+      <input type="radio" name="gender" value="2" checked id="female">
+      <label for="female">女</label>
+    </div>
+    <div>
+      爱好：
+      <input type="checkbox" name="hobby" id="" value="ppq" checked> 乒乓球
+      <input type="checkbox" name="hobby" id="" value="lq"> 篮球
+      <input type="checkbox" name="hobby" id="" value="ymq" checked> 羽毛球
+      <input type="checkbox" name="hobby" id="" value="zq"> 足球
+    </div>
+    <div>
+      常见编程语言：
+      <!-- <select name="language" multiple> -->
+      <select name="language">
+        <option value="Java">Java</option>
+        <option value="JavaScript" selected>JavaScript</option>
+        <option value="Python">Python</option>
+      </select>
+    </div>
+    <div>
+      <textarea name="text" id="" cols="30" rows="3"></textarea>
+    </div>
+    <div>
+      input 形式的：
+      <input type="submit" value="登录" name="" id="">
+      <input type="reset" value="重置" name="" id="">
+      <input type="button" value="按钮" name="" id="">
+    </div>
+    <div>
+      button 形式的：
+      <button type="submit">提交</button>
+      <button type="reset">重置</button>
+      <button type="button">按钮</button>
+      <button type="button">
+        <img src="../day10/images/2.jpeg" alt="" style="height: 30px; width: 30px; vertical-align:middle;">
+      </button>
+    </div>
+  </form>
+
+  <pre>
+    placeholder
+      - 用来设置文本框的占位符
+    value
+      - 文本框中可以通过 value 来指定默认值
+    disabled
+      - 禁用表单项，不会被提交
+    readonly
+      - 表单项无法修改，但是可以提交
+    checked
+      - 设置默认选中的单选和多选
+    selected
+      - 设置默认选中的下拉项
+    input type="reset"
+      - 重置按钮，重置表单
+    input type="button"
+      - 普通按钮，只能被点，但是我们可以通过 JS 来为其添加功能
+  </pre>
+</body>
+
+</html>

@@ -1,0 +1,114 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-03-31 08:47:25
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-03-31 11:24:46
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day05/03_文本样式.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文本样式</title>
+  <style>
+    p {
+      /* text-align: left; */
+      /* text-align: right; */
+      /* text-align: center; */
+      text-align: justify;
+
+      /* text-indent: 10px; */
+      text-indent: 2em;
+
+      /* text-decoration: underline; */
+      /* text-decoration: overline; */
+      /* text-decoration: line-through; */
+      /* text-decoration: underline dotted blue; */
+      /* text-decoration: solid underline pink; */
+      /* text-decoration: underline wavy gold; */
+      /* text-decoration: overline wavy gold; */
+      /* text-decoration: underline double firebrick; */
+      text-decoration: line-through double firebrick;
+    }
+
+    .box1 {
+      width: 300px;
+      height: 300px;
+      border: 10px solid rebeccapurple;
+      text-align: center;
+    }
+
+    .box2 {
+      width: 100px;
+      height: 100px;
+      background-color: aqua;
+      display: inline-block;
+    }
+
+    img {
+      width: 100px;
+      height: 100px;
+    }
+
+    .box3 {
+      /* text-indent: -9999em; */
+      font-size: 0;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box3">随便的你说的我都想相信你</div>
+
+  <p>
+    层叠样式表（Cascading Style Sheets，缩写为 CSS）是一种样式表语言，用来描述 HTML 或 XML（包括如 SVG、MathML 或 XHTML 之类的 XML 分支语言）文档的呈现。CSS
+    描述了在屏幕、纸质、音频等其他媒体上的元素应该如何被渲染的问题。
+    CSS 是开放 Web 的核心语言之一，并根据 W3C 规范在 Web 浏览器中进行了标准化。以前，CSS 规范的各个部分的开发是同步进行的，这种方式允许对最新推荐的 CSS 版本进行控制。你可能已经听说过 CSS1、CSS2.1
+    甚至 CSS3。但是以后将不会再有 CSS3 或者 CSS4；相反，现在的一切都是没有版本号的 CSS。
+  </p>
+
+  <p>
+    Cascading Style Sheets (CSS) is a stylesheet language used to describe the presentation of a document written in
+    HTML or XML (including XML dialects such as SVG, MathML or XHTML). CSS describes how elements should be rendered on
+    screen, on paper, in speech, or on other media.
+    CSS is among the core languages of the open web and is standardized across Web browsers according to W3C
+    specifications. Previously, the development of various parts of CSS specification was done synchronously, which
+    allowed the versioning of the latest recommendations. You might have heard about CSS1, CSS2.1, or even CSS3. There
+    will never be a CSS3 or a CSS4; rather, everything is now CSS without a version number.
+  </p>
+
+  <div class="box1">
+    <div class="box2"></div>
+    <img src="./images/1f328ec6ec7a0cf4.png.avif" alt="" srcset="">
+  </div>
+
+  <pre>
+    text-align  文本的水平对齐方式
+      可选值：
+        left 默认值，左对齐
+        right 右对齐
+        center 居中对齐
+        justify 两端对齐
+
+    网页中，图片、行内块 都可以使用文本对齐的方式
+
+    text-indent 首行缩进
+      - 可以设置负值
+        - 正值文字向右移动
+        - 负值文字向左移动
+            可以利用负值隐藏网页中的一些文字
+
+    text-decoration 文本修饰
+      - 可选值：
+          none 默认值 没有修饰
+          underline 下划线
+          overline 上划线
+  </pre>
+</body>
+
+</html>

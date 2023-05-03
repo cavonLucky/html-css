@@ -1,0 +1,56 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-03-29 18:46:54
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-03-29 19:45:28
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day04/11_overflow.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>overflow</title>
+  <style>
+    .box1 {
+      width: 200px;
+      height: 200px;
+      background-color: aqua;
+      /* overflow: visible; */
+      /* overflow: hidden; */
+      /* overflow: scroll; */
+      overflow: auto;
+    }
+
+    .box2 {
+      width: 100px;
+      /* height: 100px; */
+      /* height: 200px; */
+      height: 400px;
+      background-color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box1">
+    <div class="box2">The overflow CSS shorthand property sets the desired behavior for an element's overflow — i.e. when an element's content is too big to fit in its block formatting context — in both directions.</div>
+  </div>
+  <pre>
+    当子元素大小超过父元素内容区时，子元素会从父元素中溢出（overflow）
+    在 CSS 通过 overflow 这个样式，来处理溢出内容
+
+    overflow
+      - 设置元素，如何处理溢出问题
+      - 可选值
+        visible 默认值，溢出内容直接在元素内容以外的位置显示
+        hidden  隐藏溢出的内容
+        scroll  生成双方向滚动条，通过滚动条来查看完整内容
+        auto    根据需要生成滚动条
+  </pre>
+</body>
+
+</html>

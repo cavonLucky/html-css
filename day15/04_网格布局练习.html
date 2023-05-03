@@ -1,0 +1,159 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-04-24 13:57:32
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-04-24 14:17:04
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day15/04_网格布局练习.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>网格布局练习</title>
+  <style>
+    .outer {
+      border: 4px solid red;
+      display: grid;
+      grid-gap: 10px;
+      grid-template-columns: repeat(5, 1fr);
+      grid-auto-rows: 100px 200px 300px;
+      grid-auto-flow: dense;
+    }
+
+    .outer div {
+      border: 4px solid greenyellow;
+    }
+
+    .box5 {
+      grid-row: 2/4;
+      grid-column: 4/-1;
+    }
+
+    .box10 {
+      grid-row: 3/5;
+    }
+
+    .box18 {
+      grid-column: 2/-1;
+    }
+
+    .box24 {
+      grid-row: 7/9;
+      grid-column: 1/4;
+    }
+
+
+    .box30 {
+      grid-column: 2/-1;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="outer">
+    <div class="box1">box01</div>
+    <div class="box2">box02</div>
+    <div class="box3">box03</div>
+    <div class="box4">box04</div>
+    <div class="box5">box05</div>
+    <div class="box6">box06</div>
+    <div class="box7">box07</div>
+    <div class="box8">box08</div>
+    <div class="box9">box09</div>
+    <div class="box10">box10</div>
+    <div class="box11">box11</div>
+    <div class="box12">box12</div>
+    <div class="box13">box13</div>
+    <div class="box14">box14</div>
+    <div class="box15">box15</div>
+    <div class="box16">box16</div>
+    <div class="box17">box17</div>
+    <div class="box18">box18</div>
+    <div class="box19">box19</div>
+    <div class="box20">box20</div>
+    <div class="box21">box21</div>
+    <div class="box22">box22</div>
+    <div class="box23">box23</div>
+    <div class="box24">box24</div>
+    <div class="box25">box25</div>
+    <div class="box26">box26</div>
+    <div class="box27">box27</div>
+    <div class="box28">box28</div>
+    <div class="box29">box29</div>
+    <div class="box30">box30</div>
+    <div class="box31">box31</div>
+    <div class="box32">box32</div>
+    <div class="box33">box33</div>
+    <div class="box34">box34</div>
+    <div class="box35">box35</div>
+    <div class="box36">box36</div>
+    <div class="box37">box37</div>
+    <div class="box38">box38</div>
+    <div class="box39">box39</div>
+    <div class="box40">box40</div>
+    <div class="box41">box41</div>
+    <div class="box42">box42</div>
+    <div class="box43">box43</div>
+    <div class="box44">box44</div>
+    <div class="box45">box45</div>
+    <div class="box46">box46</div>
+    <div class="box47">box47</div>
+    <div class="box48">box48</div>
+    <div class="box49">box49</div>
+    <div class="box50">box50</div>
+    <div class="box51">box51</div>
+    <div class="box52">box52</div>
+    <div class="box53">box53</div>
+    <div class="box54">box54</div>
+    <div class="box55">box55</div>
+    <div class="box56">box56</div>
+    <div class="box57">box57</div>
+    <div class="box58">box58</div>
+    <div class="box59">box59</div>
+    <div class="box60">box60</div>
+    <div class="box61">box61</div>
+    <div class="box62">box62</div>
+    <div class="box63">box63</div>
+    <div class="box64">box64</div>
+    <div class="box65">box65</div>
+    <div class="box66">box66</div>
+    <div class="box67">box67</div>
+    <div class="box68">box68</div>
+    <div class="box69">box69</div>
+    <div class="box70">box70</div>
+    <div class="box71">box71</div>
+    <div class="box72">box72</div>
+    <div class="box73">box73</div>
+    <div class="box74">box74</div>
+    <div class="box75">box75</div>
+    <div class="box76">box76</div>
+    <div class="box77">box77</div>
+    <div class="box78">box78</div>
+    <div class="box79">box79</div>
+    <div class="box80">box80</div>
+    <div class="box81">box81</div>
+    <div class="box82">box82</div>
+    <div class="box83">box83</div>
+    <div class="box84">box84</div>
+    <div class="box85">box85</div>
+    <div class="box86">box86</div>
+    <div class="box87">box87</div>
+    <div class="box88">box88</div>
+    <div class="box89">box89</div>
+    <div class="box90">box90</div>
+    <div class="box91">box91</div>
+    <div class="box92">box92</div>
+    <div class="box93">box93</div>
+    <div class="box94">box94</div>
+    <div class="box95">box95</div>
+    <div class="box96">box96</div>
+    <div class="box97">box97</div>
+    <div class="box98">box98</div>
+    <div class="box99">box99</div>
+    <div class="box100">box100</div>
+  </div>
+</body>
+</html>

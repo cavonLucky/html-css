@@ -1,0 +1,67 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-04-03 16:09:56
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-04-03 16:27:21
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day06/09_浮动.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>浮动</title>
+  <style>
+    .box1 {
+      /* width: 200px; */
+      /* height: 200px; */
+      background-color: brown;
+      float: left;
+    }
+
+    .box2 {
+      width: 200px;
+      height: 200px;
+      background-color: yellow;
+      float: left;
+    }
+
+    span {
+      width: 200px;
+      height: 200px;
+      background-color: green;
+      float: left;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box1">钱钱钱</div>
+  <div class="box2"></div>
+  <span>我是一个小span</span>
+
+  <div style="clear: both;"></div>
+  <pre>
+    浮动后，之前的布局等式就消失了
+    元素脱离文档流后的特点：
+      块元素：
+        1. 块元素不在独占一行，而是水平排列
+        2. 宽度和高度都被内容撑开
+      行内元素：
+        设置浮动行内元素可以设置宽度和高度
+
+    总结：脱离文档流，块元素不再独占一行，宽高被内容撑开，行内元素变成块元素
+
+    脱离文档流之后，就不再需要区分行内和块
+
+    作业：
+      1. 京东顶部导航，登录……
+      2. 京东搜索下面的导航，京东超市……
+  </pre>
+</body>
+
+</html>

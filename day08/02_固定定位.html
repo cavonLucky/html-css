@@ -1,0 +1,58 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-04-07 20:07:37
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-04-07 20:28:32
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day08/02_固定定位.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>固定定位</title>
+  <style>
+    body {
+      height: 3000px;
+    }
+
+    .box1 {
+      width: 200px;
+      height: 200px;
+      background-color: aqua;
+    }
+
+    .box2 {
+      width: 200px;
+      height: 200px;
+      background-color: yellowgreen;
+      /* position: fixed; */
+      position: absolute;
+      bottom: 0;
+      right: 0;
+    }
+
+    .box3 {
+      width: 200px;
+      height: 200px;
+      background-color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box1"></div>
+  <div class="box2"></div>
+  <div class="box3"></div>
+  <pre>
+    将 position 设置为 fixed 则开启了元素的固定定位
+      固定定位也是一种绝对定位，它的大部分的特点和绝对定位是相同的
+      不同点在于固定定位总是参照于浏览器的窗口进行定位
+        一旦定位，不会随窗口进行滚动
+  </pre>
+</body>
+
+</html>

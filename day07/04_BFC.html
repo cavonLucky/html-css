@@ -1,0 +1,78 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-04-04 16:54:02
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-04-04 17:52:05
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day07/4_BFC.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>BFC</title>
+  <style>
+    .box1 {
+      /* 建议不要写死 */
+      /* height: 200px; */
+      /* float: left; */
+      /* overflow: hidden; */
+      /* overflow: scroll; */
+      /* overflow: auto; */
+      display: flow-root;
+      border: 10px solid red;
+    }
+
+    .box2 {
+      width: 200px;
+      height: 200px;
+      background-color: aquamarine;
+      float: left;
+    }
+
+    .box3 {
+      width: 300px;
+      height: 300px;
+      background-color: palevioletred;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box1">
+    <div class="box2"></div>
+  </div>
+  <div class="box3"></div>
+
+  <pre>
+    BFC(Block Formatting Context)
+      - 块及格式化环境
+      - https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context
+      - 可以将 BFC 理解为一个隐藏的属性，当开启 BFC 后元素会具备如下的特征
+          1. 开启BFC后，子元素的垂直外边距不会传递给父元素
+          2. 开启BFC后，元素不会被浮动元素所覆盖
+          3. 开启BFC后，元素可以包含浮动的子元素
+
+      - 如何开启BFC：
+          - 需要用一些其他的样式来间接的开启 BFC
+          - 由于 BFC 是通过样式来间接开启的，座椅都会有一些副作用，而我们要做的是找到一种可以开启，同时副作用又比较小的
+          - 例如：
+              1. 浮动会开始元素的 BFC
+                  float: left;
+                  float: right;
+              2. 将 overflow 设置为一个非 visible 的值
+                  overflow: hidden;
+                  overflow: scroll;
+                  overflow: auto;
+              3. display: flow-root;
+                 注意：IE不兼容，在不需要兼容 IE 的情况下最好的选择，没有副作用
+
+
+
+  </pre>
+</body>
+
+</html>

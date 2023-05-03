@@ -1,0 +1,81 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-03-25 16:09:43
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-03-25 16:52:53
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day02/11_属性选择器.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>属性选择器</title>
+  <style>
+    /* [属性名] 选中具有该属性的元素 */
+    [title] {
+      background: pink;
+    }
+
+    /* [属性名=属性值] 选中指定属性值的元素 */
+    [title=hello] {
+      text-decoration: line-through lightskyblue;
+    }
+
+    /* [属性名^=属性值] 选中属性值以指定内容开头的元素 */
+    [title^=he] {
+      text-shadow: 2px 2px 1px red;
+    }
+
+    /* [属性名$=属性值] 选中属性值以指定内容结尾的元素 */
+    [title$=lo] {
+      border: 5px solid black;
+    }
+
+    /* [属性名*=属性值] 选中属性值包含指定内容的元素 */
+    [title*=a] {
+      font-style: oblique;
+    }
+
+    /* 选中title属性等于hello的div */
+    div[title=hello] {
+      font-size: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <pre>
+    属性选择器：
+      - 用来根据元素的属性来选中元素
+      - 语法：
+        [属性名] 选中具有该属性的元素
+        [属性名=属性值] 选中指定属性值的元素
+        [属性名^=属性值] 选中属性值以指定内容开头的元素
+        [属性名$=属性值] 选中属性值以指定内容结尾的元素
+        [属性名*=属性值] 选中属性值包含指定内容的元素
+
+    交集选择器：
+      - 作用：选中同时符合多个选择器元素
+      - 语法：选择器1选择器2选择器3{}
+      - 例子：
+            div[title=hello]{}
+            div.box{}
+
+      可以将多个选择器连着一起写，这样则要求元素必须同时满足多个选择器
+
+    作业：https://flukeout.github.io/
+  </pre>
+
+  <h1 title="hello">纳兰容若</h1>
+  <p title="abcllo">家家争唱饮水词，纳兰心事几人知。</p>
+  <p title="helloabc">红豆生南国，春来发几枝。</p>
+  <div title="haha">愿君多采撷，此物最相思。</div>
+  <div>一往情深深几许？深山夕照深秋雨。</div>
+  <div title="hello">半世浮萍随逝水，一宵冷雨葬名花。</div>
+</body>
+
+</html>

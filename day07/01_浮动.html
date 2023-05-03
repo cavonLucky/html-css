@@ -1,0 +1,75 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-04-03 16:28:28
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-04-04 11:37:38
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day07/01_浮动.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>浮动</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+    }
+
+    ul {
+      background-color: #333;
+      list-style: none;
+      width: 1000px;
+      height: 40px;
+      line-height: 40px;
+      margin: 100px auto;
+    }
+
+    li {
+      float: left;
+      width: 125px;
+      height: 40px;
+      line-height: 40;
+      text-align: center;
+      transition: color .2s ease;
+    }
+
+    li:hover {
+      background: #4a4a4a;
+    }
+
+    a {
+      height: 40px;
+      line-height: 40px;
+      text-decoration: none;
+      display: block;
+      margin: 0 11px;
+      font-size: 15px;
+      color: #fff;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li><a href="#">手机</a></li>
+    <li><a href="#">电视</a></li>
+    <li><a href="#">平板</a></li>
+    <li><a href="#">笔记本</a></li>
+    <li><a href="#">家电</a></li>
+    <li><a href="#">路由器</a></li>
+    <li><a href="#">服务中心</a></li>
+    <li><a href="#">社区</a></li>
+  </ul>
+</body>
+
+</html>

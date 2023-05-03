@@ -1,0 +1,37 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-03-24 16:53:42
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-03-24 17:34:31
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day02/06_内联框架.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>内联框架</title>
+</head>
+<body>
+  <pre>
+    iframe
+      - 内联框架，用来向一个网页中引入另一个网页
+      - 属性：
+          src 来指定要引入的网页的路径
+            <iframe src="https://lilichao.com"></iframe>
+
+            <iframe src="./05_超链接.html"></iframe>
+
+            <iframe src="./05_超链接.html" width="500" height="300"></iframe>
+
+            在本页面设置一个 name 属性 hello, 跳转到 04_超链接.html 页面
+            然后在 04_超链接.html 设置一个 target 属性 值为 hello
+            <iframe src="./04_超链接.html" name="hello"></iframe>
+
+  </pre>
+
+  <iframe src="./04_超链接.html"></iframe>
+</body>
+</html>

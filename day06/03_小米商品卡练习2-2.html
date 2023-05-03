@@ -1,0 +1,127 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-04-02 18:40:25
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-04-02 19:04:04
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day06/03_小米商品卡练习2-2.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>小米商品卡练习</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+    }
+
+    .brick-list {
+      text-align: center;
+      list-style: none;
+    }
+
+    .brick-item {
+      background-color: #fff;
+      width: 234px;
+      height: 300px;
+      box-sizing: border-box;
+      padding: 20px 0;
+      transition: all .3s linear;
+      margin: 0px auto 10px;
+    }
+
+    .brick-item:hover {
+      box-shadow: 0 15px 30px rgba(0, 0, 0, .1);
+      transform: translate3d(0, -2px, 0);
+    }
+
+    a {
+      text-decoration: none;
+    }
+
+    .figure-img {
+      width: 160px;
+      height: 160px;
+      margin: 0 auto 18px;
+    }
+
+    .figure-img img {
+      width: 100%;
+      height: 100%;
+      vertical-align: top;
+    }
+
+    .title {
+      font-weight: 400;
+      font-size: 14px;
+      color: #333;
+      margin: 0 10px 2px;
+    }
+
+    .desc {
+      font-size: 12px;
+      color: #b0b0b0;
+      margin: 0 10px 10px;
+    }
+
+    .price {
+      font-size: 14px;
+      color: #ff6700;
+    }
+
+    .price del {
+      color: #b0b0b0;
+      margin-left: 0.5em;
+    }
+
+    .title,
+    .desc,
+    .price {
+      text-align: center;
+      white-space: nowrap;
+      text-overflow: ellipsis;
+      overflow: hidden;
+    }
+  </style>
+</head>
+
+<body>
+  <ul class="brick-list">
+    <li class="brick-item">
+      <a href="#">
+        <div class="figure-img">
+          <img src="./images/63532c3fce30e7beb763d804d6a40f75.webp" alt="小米笔记本" srcset="">
+        </div>
+        <h3 class="title">小米笔记本Pro X 14</h3>
+        <p class="desc">高能旗舰 轻薄力作</p>
+        <p class="price">
+          <span>5999元</span><del>7999元</del>
+        </p>
+      </a>
+    </li>
+    <li class="brick-item">
+      <a href="#">
+        <div class="figure-img">
+          <img src="./images/ed0541d2337dc4fff6e52c2b7f162fe5.webp" alt="小米平板" srcset="">
+        </div>
+        <h3 class="title">小米平板5 Pro</h3>
+        <p class="desc">骁龙870芯片 | 2.5K超高清｜120HZ高刷新率 </p>
+        <p class="price">
+          <span>2199元起</span><del>2499元</del>
+        </p>
+      </a>
+    </li>
+  </ul>
+</body>
+
+</html>

@@ -1,0 +1,99 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-04-21 17:39:12
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-04-21 18:13:55
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day13/05_立方体2.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>立方体</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      perspective: 800px;
+    }
+
+    .cube {
+      width: 200px;
+      height: 200px;
+      /* background-color: red; */
+      list-style: none;
+      margin: 200px auto;
+      position: relative;
+      /* transform: rotateY(45deg); */
+      transform-style: preserve-3d;
+      transition: all 10s;
+    }
+
+    .cube:hover {
+      transform: rotateX(2turn) rotateY(2turn) rotateZ(2turn);
+      /* transform: rotateX(1turn) rotateY(1turn); */
+      /* transform: rotateY(2turn) scaleZ(2); */
+    }
+
+    li {
+      width: 200px;
+      height: 200px;
+      font-size: 50px;
+      color: #fff;
+      text-align: center;
+      line-height: 200px;
+      opacity: .7;
+      position: absolute;
+    }
+
+    li:nth-child(1) {
+      background-color: red;
+      transform: translateZ(100px);
+    }
+
+    li:nth-child(2) {
+      background-color: orange;
+      transform: rotateY(90deg) translateZ(100px);
+    }
+
+    li:nth-child(3) {
+      background-color: yellow;
+      transform: rotateY(-90deg) translateZ(100px);
+    }
+
+    li:nth-child(4) {
+      background-color: green;
+      transform: rotateX(90deg) translateZ(100px);
+    }
+
+    li:nth-child(5) {
+      background-color: blue;
+      transform: rotateX(-90deg) translateZ(100px);
+    }
+
+    li:nth-child(6) {
+      background-color: purple;
+      transform: translateZ(-100px);
+    }
+  </style>
+</head>
+
+<body>
+  <ul class="cube">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+    <li>5</li>
+    <li>6</li>
+  </ul>
+</body>
+
+</html>

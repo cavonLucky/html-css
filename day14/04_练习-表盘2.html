@@ -1,0 +1,98 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-04-23 12:47:11
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-04-23 13:02:59
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day14/04_练习-表盘2.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>练习表盘</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .clock {
+      width: 500px;
+      height: 500px;
+      /* border: 10px solid red; */
+      border-radius: 50%;
+      margin: 100px auto;
+      position: relative;
+      background-image: url('./images/1200px-Horloĝo_001.png');
+      background-size: cover;
+    }
+
+    .hour,
+    .minute,
+    .second,
+    .origin {
+      background-color: black;
+      border-radius: 50% 50% 0 0;
+      position: absolute;
+      left: 0;
+      right: 0;
+      bottom: 50%;
+      margin: 0 auto;
+      transform-origin: bottom center;
+    }
+
+    .hour {
+      width: 9px;
+      height: 25%;
+      animation: clocks 43200 linear infinite;
+    }
+
+    .minute {
+      width: 6px;
+      height: 38%;
+      animation: clocks 3600s linear infinite ;
+    }
+
+    .second {
+      width: 3px;
+      height: 47%;
+      background-color: red;
+      animation: clocks 60s steps(60) infinite;
+    }
+
+    .origin {
+      width: 10px;
+      height: 10px;
+      background-color: #fff;
+      border: 10px solid black;
+      border-radius: 50%;
+      top: 50%;
+      margin: auto;
+    }
+
+    @keyframes clocks {
+      from {
+        transform: rotateZ(0deg);
+      }
+
+      to {
+        transform: rotateZ(360deg);
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="clock">
+    <div class="hour"></div>
+    <div class="minute"></div>
+    <div class="second"></div>
+    <div class="origin"></div>
+  </div>
+</body>
+
+</html>

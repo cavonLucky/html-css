@@ -1,0 +1,113 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-05-02 14:13:54
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-05-02 18:27:51
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day16/02_媒体查询.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>媒体查询</title>
+  <style>
+    /* @media all {
+      body {
+        background-color: violet;
+      }
+    } */
+
+    /* @media screen {
+      body {
+        background-color: aqua;
+      }
+    } */
+
+    /* @media print {
+      body {
+        color: red;
+      }
+    } */
+
+    /* @media screen,
+    print {
+      body {
+        color: red;
+      }
+    } */
+
+    /* @media (width: 500px) {
+      body {
+        background-color: violet;
+      }
+    } */
+
+    /* @media (min-width: 500px) {
+      body {
+        background-color: chartreuse;
+      }
+    } */
+
+    /* @media (max-width: 500px) {
+      body {
+        background-color: red;
+      }
+    } */
+
+  /* @media screen, print {
+    body {
+      background-color: red;
+      color: violet;
+    }
+  } */
+
+  /* @media not screen {
+    body {
+      background-color: red;
+    }
+  } */
+
+  /* @media (min-width: 500px) and (max-width: 800px) {
+    body {
+      background-color: red;
+    }
+  } */
+
+  @media only screen {
+    body {
+      background-color: orange;
+    }
+  }
+  </style>
+</head>
+
+<body>
+  <h1>打印字体</h1>
+  <!--
+    媒体查询（media query）
+      - 通过媒体查询可以为不同的设备，不同的屏幕大小设置不同的样式
+
+      @media 设备类型 {}
+              all 任意类型的设备
+              screen 带有屏幕的设备
+              print 打印设备
+              speech 屏幕阅读器
+
+        min-width 指定最小视口，大于指定值时样式生效
+        max-width 指定最大视口，小于指定值时样式生效
+
+        , 或
+        not 非
+        and 与
+        only
+          - 避免一些兼容性的问题
+
+
+   -->
+</body>
+
+</html>

@@ -1,0 +1,62 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-03-20 20:06:32
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-03-20 20:30:04
+ * @FilePath: /bilibili-lilichao-teacher/html-css/demo/article.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>article</title>
+  <style>
+    .forecast {
+      margin: 0;
+      padding: 0.3rem;
+      background-color: #eee;
+      font: 1rem 'Fira Sans', sans-serif;
+    }
+
+    .forecast>h1,
+    .day-forecast {
+      margin: 0.5rem;
+      padding: 0.3rem;
+      font-size: 1.2rem;
+    }
+
+    .day-forecast {
+      background: right/contain content-box border-box no-repeat url('./rain.svg') white;
+    }
+
+    .day-forecast > h2,
+    .day-forecast > p {
+      margin: 0.2rem;
+      font-size: 1rem;
+    }
+  </style>
+</head>
+
+<body>
+  <article class="forecast">
+    <h1>Weather forecast for Seattle</h1>
+    <article class="day-forecast">
+      <h2>03 March 2018</h2>
+      <p>Rain.</p>
+    </article>
+    <article class="day-forecast">
+      <h2>04 March 2018</h2>
+      <p>Periods of rain.</p>
+    </article>
+    <article class="day-forecast">
+      <h2>05 March 2018</h2>
+      <p>Heavy rain.</p>
+    </article>
+  </article>
+</body>
+
+</html>

@@ -1,0 +1,108 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-04-15 12:58:56
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-04-15 22:38:08
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day11/03_总结居中.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>总结居中</title>
+  <style>
+    .box1 {
+      width: 400px;
+      height: 400px;
+      border: 10px red solid;
+      /* position: relative; */
+
+      /* 第三种方法 */
+      /* display: table-cell;
+      vertical-align: middle;
+      text-align: center; */
+
+      /* 第三种方法 */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+
+      margin: 0 auto;
+    }
+
+    .box2 {
+      width: 200px;
+      height: 200px;
+      background-color: aquamarine;
+      /* 方法一 */
+      /* margin: 0 auto; */
+
+      /* 方法二 */
+      /* position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      margin: auto; */
+
+      /* 方法三: 太老不推荐 */
+      /* position: absolute;
+      left: 50%;
+      margin-left: -100px;
+      top: 50%;
+      margin-top: -100px; */
+
+      /* margin: auto; */
+      /* display: inline-block; */
+
+    }
+  </style>
+</head>
+<body>
+  <div class="box1">
+    <div class="box2"></div>
+  </div>
+
+  <pre>
+    1. 使用盒子模型
+        直接通过盒子模型 margin: 0 auto; 来实现居中
+          - 原理：利用了盒子模型在水平布局时的等式
+            左右外边距 + 可见框宽度 = 包含块宽度
+          - 缺点：
+            1. 不能处理垂直居中问题
+            2. 居中的元素必须指定宽度
+    2. 使用定位
+        通过如下代码来实现：
+          position: absolute;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          margin: auto;
+        - 原理：利用定位后新的等式来实现居中
+            左右偏移量 + 左右外边距 + 可见框的宽度 = 包含块宽度
+            上下偏移量 + 上下外边距 + 可见框的高度 = 包含块宽度
+        - 缺点：
+           1. 设置的样式稍微多一些
+           2. 必须指定元素的大小
+
+    3. 通过表格来居中
+        - 将父元素设置 display: table-cell; 然后通过 vertical-align: middle; 来实现垂直居中
+            然后再通过子元素 margin: auto; 来实现居中
+        - 也可以将子元素转换为 display: inline-block; 然后通过父元素的 text-align: center; 来实现水平居中
+        - 缺点：
+            父元素设置为单元格后，默认宽度被内容撑开
+
+    4. 通过弹性盒来居中（推荐）
+        - 代码：
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        - 缺点：几乎没有
+
+  </pre>
+</body>
+</html>

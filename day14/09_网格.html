@@ -1,0 +1,47 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-04-23 18:31:41
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-04-23 18:40:41
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day14/09_网格.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>网格</title>
+  <style>
+    .box1 {
+      width: 500px;
+      height: 500px;
+      border: 10px solid red;
+      display: grid;
+
+      /* justify-items: stretch; */
+
+      justify-items: center;
+      align-items: center;
+    }
+
+    .box2 {
+      width: 100px;
+      height: 100px;
+      background-color: #bfa;
+    }
+  </style>
+</head>
+<body>
+  <div class="box1">
+    <div class="box2">aaa</div>
+  </div>
+
+  <pre>
+    justify-items 设置网格中元素水平方向的对齐方式
+
+    align-items 设置网格中元素垂直方向的对齐方式
+  </pre>
+</body>
+</html>

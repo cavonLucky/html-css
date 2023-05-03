@@ -1,0 +1,87 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-04-05 17:23:32
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-04-05 17:43:56
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day07/08_clearfix.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>clearfix</title>
+  <style>
+    .box1 {
+      border: 10px solid red;
+    }
+
+    .box2 {
+      width: 200px;
+      height: 200px;
+      background-color: aqua;
+      float: left;
+      /* float: right; */
+    }
+
+    .box3 {
+      /* clear: right; */
+      clear: both;
+    }
+
+    /* 解决高度塌陷问题 */
+    /* .clearfix::after {
+      content: "";
+      display: block;
+      clear: both;
+    } */
+
+    .box4 {
+      width: 200px;
+      height: 200px;
+      background-color: bisque;
+    }
+
+    .box5 {
+      width: 100px;
+      height: 100px;
+      background-color: blueviolet;
+      margin-top: 100px;
+    }
+
+    /* 解决外边距折叠问题 */
+    /* .clearfix::before {
+      content: "";
+      display: table;
+    } */
+
+    .clearfix::before,
+    .clearfix::after {
+      content: '';
+      display: table;
+      clear: both;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box1 clearfix">
+    <div class="box2"></div>
+    <!-- <div class="box3"></div> -->
+  </div>
+
+  <hr>
+
+  <div class="box4 clearfix">
+    <div class="box5"></div>
+  </div>
+  <pre>
+
+  </pre>
+</body>
+
+</html>

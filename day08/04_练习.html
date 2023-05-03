@@ -1,0 +1,179 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-04-07 20:51:50
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-04-08 16:12:24
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day08/04_练习.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>京东轮播图练习</title>
+  <!-- 引入重置样式表 -->
+  <link rel="stylesheet" href="./css/reset.css">
+  <!-- 引入fontawesome -->
+  <link rel="stylesheet" href="./css/all.css">
+  <style>
+    /* 设置外层容器的样式 */
+    .banner {
+      width: 590px;
+      height: 470px;
+      position: relative;
+
+      margin: 100px auto;
+    }
+
+    /* 设置图片 */
+    .slider_list li {
+      position: absolute;
+    }
+
+    .slider_list li:nth-child(4) {
+      z-index: 1;
+    }
+
+    img {
+      vertical-align: top;
+    }
+
+    /* 设置左右翻页的箭头 */
+    .prev,
+    .next {
+      position: absolute;
+      z-index: 999;
+      width: 25px;
+      height: 35px;
+      background-color: rgba(0, 0, 0, .15);
+      top: 0;
+      bottom: 0;
+      margin: auto 0;
+      line-height: 35px;
+      box-sizing: border-box;
+      cursor: pointer;
+      color: rgba(255, 255, 255, .8);
+      transition: background-color .3s ease;
+    }
+
+    .prev {
+      left: 0;
+      border-top-right-radius: 18px;
+      border-bottom-right-radius: 18px;
+      padding-left: 5px;
+    }
+
+    .next {
+      right: 0;
+      border-top-left-radius: 18px;
+      border-bottom-left-radius: 18px;
+      padding-left: 10px;
+    }
+
+    .prev:hover,
+    .next:hover {
+      background-color: rgba(0, 0, 0, .4);
+    }
+
+    /* 设置导航点的样式 */
+    .slider_indicators {
+      position: absolute;
+      z-index: 999;
+      left: 30px;
+      bottom: 20px;
+    }
+
+    .slider_indicators li {
+      width: 10px;
+      height: 10px;
+      background-color: rgba(255, 255, 255, .4);
+      border: 1px solid rgba(0, 0, 0, .05);
+      float: left;
+      box-sizing: border-box;
+      border-radius: 50%;
+      margin-right: 6px;
+    }
+
+    .slider_indicators li:hover,
+    .slider_indicators .active {
+      outline: 3px solid rgba(0, 0, 0, .1);
+      background-color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- 轮播图最外层容器 -->
+  <div class="banner">
+    <!-- 图片的容器 -->
+    <ul class="slider_list">
+      <li>
+        <a href="#">
+          <img src="./images/1.jpeg" alt="" srcset="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="./images/2.jpeg" alt="" srcset="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="./images/3.jpeg" alt="" srcset="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="./images/4.jpeg" alt="" srcset="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="./images/5.jpeg" alt="" srcset="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="./images/6.jpeg" alt="" srcset="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="./images/7.jpeg" alt="" srcset="">
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <img src="./images/8.jpeg" alt="" srcset="">
+        </a>
+      </li>
+    </ul>
+
+    <!-- 左右翻页 -->
+    <div class="prev-next">
+      <div class="prev">
+        <i class="fa-solid fa-angle-left"></i>
+      </div>
+      <div class="next">
+        <i class="fa-solid fa-angle-right"></i>
+      </div>
+    </div>
+
+    <!-- 导航小点 -->
+    <ul class="slider_indicators">
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li></li>
+      <li class="active"></li>
+      <li></li>
+      <li></li>
+    </ul>
+  </div>
+</body>
+
+</html>

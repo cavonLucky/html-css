@@ -1,0 +1,94 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-04-23 16:20:02
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-04-23 16:54:36
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day14/07_网格练习.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>网格练习</title>
+  <style>
+    .outer {
+      width: 600px;
+      height: 600px;
+      display: grid;
+    }
+
+    .box1 {
+      grid-column-start: 1;
+      grid-column-end: 6;
+      grid-row-start: 1;
+      grid-row-end: 2;
+      border: 2px solid red;
+    }
+
+    .box2 {
+      grid-column-start: 1;
+      grid-column-end: 3;
+      grid-row-start: 2;
+      grid-row-end: 4;
+      border: 2px solid orange;
+    }
+
+    .box3 {
+      grid-column-start: 3;
+      grid-column-end: 6;
+      grid-row-start: 2;
+      grid-row-end: 3;
+      border: 2px solid yellow;
+    }
+
+    .box4 {
+      grid-column-start: 3;
+      grid-column-end: 4;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      border: 2px solid green;
+    }
+
+    .box5 {
+      grid-column-start: 4;
+      grid-column-end: 5;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      border: 2px solid cyan;
+    }
+
+    .box6 {
+      grid-column-start: 5;
+      grid-column-end: 6;
+      grid-row-start: 3;
+      grid-row-end: 4;
+      border: 2px solid blue;
+    }
+
+    .box7 {
+      grid-column-start: 1;
+      grid-column-end: 6;
+      grid-row-start: 4;
+      grid-row-end: 5;
+      border: 2px solid purple;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="outer">
+    <div class="box1">网页头部</div>
+    <div class="box2">菜单</div>
+    <div class="box3">主体内容-上半部分</div>
+    <div class="box4">主体内容-下部图片</div>
+    <div class="box5">主体内容-下部图片</div>
+    <div class="box6">主体内容-下部图片</div>
+    <div class="box7">网页底部</div>
+  </div>
+</body>
+
+</html>

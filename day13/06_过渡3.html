@@ -1,0 +1,130 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-04-22 13:16:35
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-04-22 13:33:34
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day13/06_过渡3.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>过渡</title>
+  <style>
+    .box1,
+    .box2,
+    .box3,
+    .box4,
+    .box5,
+    .box6,
+    .box7,
+    .box8 {
+      width: 100px;
+      height: 100px;
+      background-color: red;
+      margin-top: 20px;
+      transition-property: all;
+      transition-duration: 5s;
+    }
+
+    body:hover .box1,
+    body:hover .box2,
+    body:hover .box3,
+    body:hover .box4,
+    body:hover .box5,
+    body:hover .box6,
+    body:hover .box7,
+    body:hover .box8 {
+      margin-left: 500px;
+    }
+
+    .box1 {
+      background-color: orange;
+      transition-timing-function: steps(5);
+    }
+
+    .box2 {
+      background-color: orange;
+      transition-timing-function: steps(5, jump-start);
+    }
+
+    .box3 {
+      background-color: yellow;
+      transition-timing-function: steps(5, jump-end);
+    }
+
+    .box4 {
+      background-color: green;
+      transition-timing-function: steps(5, jump-none);
+    }
+
+    .box5 {
+      background-color: cyan;
+      transition-timing-function: steps(5, jump-both);
+    }
+
+    .box6 {
+      background-color: blue;
+      transition-timing-function: step-start;
+    }
+
+    .box7 {
+      background-color: purple;
+      /* transition-timing-function: steps(5); */
+      transition-timing-function: step-end;
+    }
+
+    .box8 {
+      background-color: black;
+      transition: all 3s 1s linear;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box1">steps(5)</div>
+  <div class="box2">jump-start</div>
+  <div class="box3">jump-end</div>
+  <div class="box4">jump-none</div>
+  <div class="box5">jump-both</div>
+  <div class="box6">step-start</div>
+  <div class="box7">step-end</div>
+  <div class="box8"></div>
+
+  <pre>
+    transition-property
+      - 应用过渡效果的属性
+      - all 表示所有样式
+
+    transition-duration
+      - 过渡效果所花费的时间
+      - 单位：
+          s 秒
+          ms 毫秒
+
+    transition-delay
+      - 过渡效果的延时
+
+    transition-timing-function
+      - ease 默认值 先加速然后减速
+      - linear 匀速运动
+      - ease-in 加速运动
+      - ease-out 减速运动
+      - ease-in-out 开始缓慢运动 加速 然后再次减速。
+      - cubic-bezier 贝塞尔曲线 自定义运动方式（https://cubic-bezier.com/）
+      - steps() 分步执行动画
+        - steps(5) 起步先停留几秒钟再跳跃
+        - jump-start 起步先跳跃再停留几秒钟
+        - jump-end 起步先停留几秒钟再跳跃
+        - jump-none 两端都没有跳跃
+        - jump-both
+        - step-start 快速跳跃到终点
+        - step-end 两端跳跃结束快速跳跃终点
+  </pre>
+</body>
+
+</html>

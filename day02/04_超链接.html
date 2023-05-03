@@ -1,0 +1,44 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-03-24 14:56:12
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-03-24 17:30:04
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day02/04_超链接.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>超链接</title>
+</head>
+
+<body>
+  <pre>
+    a
+      - 使用 a 标签来定义一个超链接
+      - 通过超链接可以跳到其他页面
+        <a href="./01_答疑.html">跳转其他网页</a>
+
+      - 属性
+        href：指定要跳转到位置
+          - 需要一个路径作为参数
+          <a href="./03_相对路径.html">指定跳转到其他页面</a>
+
+        target：指定页面打开的位置
+          - 可选值：
+            _self 默认值，在当前标签页打开链接
+            <a href="./03_相对路径.html" target="_self">当前标签页打开链接</a>
+
+            _blank 在新的标签打开链接
+            <a href="./01_答疑.html" target="_blank">新的标签页打开链接</a>
+   </pre>
+
+  <hr>
+   <a href="./02_图片标签.html" target="hello">点我：配合内联框架测试</a>
+</body>
+
+</html>

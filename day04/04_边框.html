@@ -1,0 +1,74 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-03-29 11:25:03
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-03-29 11:58:54
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day04/04_边框.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>边框</title>
+  <style>
+    .box1 {
+      width: 200px;
+      height: 200px;
+      background-color: aqua;
+
+      
+      /* border-width: 10px 20px 30px 40px; */
+      /* border-width: 10px 30px 20px; */
+      /* border-width: 10px 20px; */
+      /* border-width: 10px; */
+
+      /* border-top-width: 10px; */
+      /* border-right-width: 10px; */
+      /* border-bottom-width: 10px; */
+      /* border-left-width: 10px; */
+
+      /* border-color: red; */
+
+      /* border-style: solid; */
+      /* border-style: dotted; */
+      /* border-style: dashed; */
+      /* border-style: double; */
+
+      border: double red 10px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box1"></div>
+
+  <pre>
+    border-width 用来指定边框的宽度
+      取值：10px 20px 30px 40px 上 右 下 左
+           10px 30px 20px 上 左右 下
+           10px 20px 上下 左右
+           10px 上下左右
+
+      除了 border-width 以外，也可以通过 border-xxx-width 来分别设置某个边框的宽度。
+      xxx 可以是 top right bottom left
+
+      边框的样式 border-style:
+        solid 实线
+        dotted 点状虚线
+        dashed 虚线
+        double 双线
+
+      border 简写属性，可以同时设置边框的三个样式
+        border-xxx 简写属性
+        border-top
+        border-right
+        border-bottom
+        border-left
+  </pre>
+</body>
+
+</html>

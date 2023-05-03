@@ -1,0 +1,37 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-04-17 18:46:56
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-04-17 18:53:17
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day12/01_隐藏一个元素.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>隐藏一个元素</title>
+  <style>
+    .box1 {
+      width: 200px;
+      height: 200px;
+      background-color: tomato;
+
+      /* display: flex; */
+      display: block;
+      /* visibility: hidden; */
+      /* opacity: 0; */
+      transition: height 0.2s;
+    }
+
+    .box1:hover {
+      height: 0;
+    }
+  </style>
+</head>
+<body>
+  <div class="box1"></div>
+</body>
+</html>

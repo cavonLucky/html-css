@@ -1,0 +1,63 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-03-29 10:44:49
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-03-29 11:23:37
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day04/03_盒子模型.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>盒子模型</title>
+  <style>
+    .box1 {
+      /* 设置内容的区的宽度 */
+      width: 200px;
+      /* 设置内容的区的高度 */
+      height: 200px;
+      background: forestgreen;
+      /* 边框的宽度 */
+      border-width: 6px;
+      /* 边框的颜色 */
+      border-color: blueviolet;
+      /* 边框的样式 */
+      border-style: dashed;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box1"></div>
+
+  <pre>
+    盒子模型（box model）：
+      - 网页的布局指就是将元素摆放到网页的不用的位置
+      - 布局就得先确定元素的大小
+      - 在网页中每一个元素都是一个矩形，或者可以直接将其想象为一个盒子，
+        每一个盒子都由以下几个部分组成：
+          - 内容区（content）
+            - 内容区在元素最内部，用来容纳子元素
+            - 内容区的大小由 width 和 height 设置
+          - 内边距（padding）
+            - 内容区和边框之间的距离称为内边距
+          - 边框（border）
+            - 边框是盒子的边界，离开边框就属于盒子的外部了
+            - 边框会影响盒子可见框的大小
+          - 外边距（margin）
+            - 盒子于盒子之间的距离称为外边距
+            - 外边距不会影响盒子的大小，但是它会影响盒子的位置（实际大小）
+
+
+        设置边框：
+          要设置边框涉及到三个样式：
+            border-width 边框的宽度
+            border-color 边框的颜色
+            border-style 边框的样式
+
+  </pre>
+</body>
+</html>

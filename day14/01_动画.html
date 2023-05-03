@@ -1,0 +1,103 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-04-22 15:13:55
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-04-22 17:35:00
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day14/01_动画.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>动画</title>
+  <style>
+    @keyframes move {
+      from {
+        margin-left: 0;
+        background-color: cyan;
+      }
+
+      /* 50% {
+        margin-left: 250px;
+      } */
+
+      to {
+        margin-left: 500px;
+        background-color: purple;
+      }
+    }
+
+    .box1 {
+      width: 100px;
+      height: 100px;
+      background-color: tomato;
+      /* animation-name: move; */
+      /* animation-duration: 5s; */
+
+      /* animation-iteration-count: infinite; */
+      /* animation-iteration-count: 3; */
+
+      /* animation-delay: 5s; */
+
+      /* animation-timing-function: ease; */
+      /* animation-timing-function: cubic-bezier(0, 1.61, 1, -0.99); */
+      /* animation-timing-function: steps(2); */
+
+      /* animation-direction: normal; */
+      /* animation-direction: reverse; */
+      /* animation-direction: alternate; */
+      /* animation-direction: alternate-reverse; */
+
+      /* animation-fill-mode: none; */
+      /* animation-fill-mode: forwards; */
+      /* animation-fill-mode: backwards; */
+      /* animation-fill-mode: both; */
+
+      /* animation-play-state: paused; */
+
+      /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+      /* animation: move 5s cubic-bezier(0, 1.61, 1, -0.99) 3s infinite alternate backwards; */
+
+    }
+
+    /* .box1:hover {
+      animation-play-state: paused;
+    } */
+  </style>
+</head>
+
+<body>
+  <div class="box1"></div>
+  <pre>
+    animation-duration 一次动画需要的时间
+
+    animation-iteration-count 动画重复的次数
+
+    animation-delay 动画的延时（第一次执行时才生效）
+
+    animation-timing-function 贝塞尔曲线，自定义
+
+    animation-direction 动画的方向
+      - normal 默认值
+      - reverse 动画反向执行
+      - alternate 动画正向反向交替执行
+      - alternate-reverse 和 alternate 相反
+
+    animation-fill-mode 动画的填充方式
+      - none 默认值 延迟时元素保持不变，动画执行结束恢复
+      - forwards 延迟时元素保持不变，动画执行结束保持 to 状态
+      - backwards 延迟时元素变为初始状态，动画执行结束恢复原状
+      - both 延迟时元素变成 from 状态，动画执行结束保持 to 状态
+
+    animation-play-state 动画的播放状态
+      - paused 暂停
+
+    animation 简写属性可以同时设置所有动画相关的样式
+  </pre>
+</body>
+
+</html>

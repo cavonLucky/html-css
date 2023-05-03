@@ -1,0 +1,93 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-04-04 13:31:13
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-04-04 15:28:14
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day07/02_网页的布局.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>仿京东布局</title>
+  <style>
+    * {
+      margin: 0;
+      height: 0;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      font: 12px/1.5 "Microsoft YaHei", "Heiti SC", tahoma, arial, "Hiragino Sans GB", "\5B8B\4F53", sans-serifƒ;
+    }
+
+    header {
+      width: 1190px;
+      height: 172px;
+      background-color: aquamarine;
+      margin: 0 auto;
+    }
+
+    main {
+      width: 1190px;
+      height: 480px;
+      /* background-color: red; */
+      margin: 10px auto;
+    }
+
+    footer {
+      width: 1190px;
+      height: 100px;
+      background-color: bisque;
+      margin: 0 auto;
+    }
+
+    .menus {
+      width: 190px;
+      height: 100%;
+      background-color: darkgoldenrod;
+      margin-right: 10px;
+      float: left;
+    }
+
+    .sliders {
+      width: 590px;
+      height: 100%;
+      background-color: darkviolet;
+      float: left;
+      margin-right: 10px;
+    }
+
+    .goods {
+      width: 190px;
+      height: 100%;
+      background-color: pink;
+      float: left;
+      margin-right: 10px;
+    }
+
+    .info {
+      width: 190px;
+      height: 100%;
+      background-color: deeppink;
+      float: left;
+    }
+  </style>
+</head>
+
+<body>
+  <header></header>
+  <main>
+    <div class="menus">菜单</div>
+    <div class="sliders">轮播图</div>
+    <div class="goods">商品</div>
+    <div class="info">信息</div>
+  </main>
+  <footer></footer>
+</body>
+
+</html>

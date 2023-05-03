@@ -1,0 +1,74 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-03-27 16:11:56
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-03-28 14:34:35
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day03/07_选择器的权重.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>选择器的权重</title>
+  <style>
+    /* div {
+      color: red;
+    } */
+
+    /* div.box1 {
+      color: chocolate;
+    } */
+
+    div.box1 {
+      color: chocolate !important;
+    }
+
+    .box1 {
+      color: blue;
+    }
+
+    /* #box2 {
+      color: yellow;
+    }
+
+    * {
+      color: blueviolet;
+    } */
+
+    
+  </style>
+</head>
+
+<body>
+
+  <div class="box1" id="box2" style="color: chartreuse;">
+  <!-- <div class="box1" id="box2"> -->
+    我是div
+    <p>我是 p 元素</p>
+  </div>
+  <pre>
+    样式的冲突
+      - 当我们使用不同的选择器，选中同一个元素并设置相同的样式时，就发生了样式的冲突
+      - 当样式冲突发生时，哪个样式生效由选择器的优先级(权重)决定：
+        继承的样式：没有优先级
+        通配选择器：0, 0, 0, 0
+        元素选择器：0, 0, 0, 1
+        类和伪类选择器：0, 0, 1, 0
+        id 选择器：0, 1, 0, 0
+        内联样式：1, 0, 0, 0
+
+      - 比较优先级时，需要将多个选择器的优先级一起计算
+          优先级高的优先显示，优先级的累加无法跨域数量级。
+          如果优先级一样，则优先显示靠下的样式；
+          如果为样式添加 !important，则该样式会获得最高的优先级，优先于其他样式显示，慎用！
+          div.box1 0, 0, 1, 1
+          .box1    0, 0, 1, 0
+          #box1    0, 1, 0, 0
+  </pre>
+</body>
+
+</html>

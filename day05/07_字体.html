@@ -1,0 +1,82 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-03-31 15:53:34
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-03-31 16:35:47
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day05/07_字体.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>字体</title>
+  <style>
+    p {
+      font-size: 40px;
+
+      /* font-weight: normal; */
+      /* font-weight: bold; */
+      font-weight: lighter;
+
+      /* font-style: normal; */
+      font-style: italic;
+      /* font-style: oblique; */
+
+      /* font-family: "Snell Roundhand", cursive; */
+      /* font-family: Microsoft YaHei; */
+      /* font-family: 华文彩云, 华文仿宋, 微软雅黑; */
+      /* font-family: serif; */
+      /* font-family: sans-serif; */
+      font-family: monospace;
+    }
+
+    div {
+      font: bold oblique 40px/1.5 Arial, 'Microsoft YaHei', sans-serif;
+    }
+  </style>
+</head>
+
+<body>
+
+  <p>
+    寥落古行宫，宫花寂寞红。白头宫女在，闲坐说玄宗。
+    Don't focus too much which will let you down.
+  </p>
+
+  <div>白日依山尽，黄河入海流。欲穷千里目，更上一层楼。</div>
+
+  <pre>
+    font-size 字体的大小
+
+    font-weight 字重
+      - 可选值：
+          normal 默认值，正常的粗细
+          bold 加粗
+          lighter 细的
+
+    font-style 字体的样式
+      - 可选值：
+          normal 默认值，正常的
+          italic 斜体
+
+    font-family 字体族，指定使用什么字体
+      - 字体的分类
+          serif 衬线字体
+          sans-serif 无衬线字体
+          monospace 等宽字体
+      - 当我们将字体设置为上述类型时。浏览器会自动选择相应的字体来显示
+
+    font
+      - 简写属性
+      - 可以同时设置字体相关的所有样式
+      - 语法：
+          font 任意 font-size/line-height font-family
+
+  </pre>
+</body>
+
+</html>

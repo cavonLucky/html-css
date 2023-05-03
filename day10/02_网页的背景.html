@@ -1,0 +1,74 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-04-11 14:17:47
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-04-11 15:59:40
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day10/02_网页的背景.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>网页的背景</title>
+  <style>
+    .box1 {
+      /* width: 1125px; */
+      /* height: 750px; */
+      width: 400px;
+      height: 400px;
+      background-color: #bfa;
+
+      background-image: url('./images/4.png');
+
+      /* background-repeat: repeat; */
+      /* background-repeat: repeat-x; */
+      /* background-repeat: repeat-y; */
+      /* background-repeat: no-repeat; */
+      /* background-repeat: space; */
+      /* background-repeat: round; */
+
+      background-repeat: no-repeat;
+      /* background-position: top right; */
+      /* background-position: bottom right; */
+      /* background-position: bottom left; */
+      /* background-position: top left; */
+      /* background-position: center center; */
+      /* background-position: top; */
+      background-position: 10px 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box1"></div>
+
+  <pre>
+    background-color 背景颜色
+
+    background-image 背景图片
+
+    background-repeat 背景的重复方式
+      - 可选值：
+          repeat 默认值，背景图片会沿着元素的水平垂直双方向重复
+          repeat-x 水平方向重复
+          repeat-y 垂直方向重复
+          no-repeat 不重复
+          space 背景图片充满元素，无法完整充满使用空白隔开
+          round 背景图片自动缩放以充满元素
+
+    background-position 设置背景图片的位置
+      - 可选值：
+          top bottom left right center
+            - 可以从上述关键字中任选两个来设置一个背景图片的位置
+            - 如果只传了一个关键字，则第二个默认就是 center
+      - background-position 水平偏移量 垂直偏移量
+          水平偏移量 值越大，背景图片越右移，可以设置负值
+          垂直偏移量 值越大，背景图片越下移，可以设置负值
+  </pre>
+</body>
+
+</html>

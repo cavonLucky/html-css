@@ -1,0 +1,120 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-04-06 11:25:13
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-04-09 12:14:08
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day07/10_绝对定位.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>绝对定位</title>
+  <style>
+
+    html {
+      margin: 50px;
+      border: 10px solid forestgreen;
+    }
+
+    body {
+      margin: 100px;
+      border: 10px solid darkblue;
+    }
+    .box1 {
+      width: 200px;
+      height: 200px;
+      background-color: aqua;
+    }
+
+    .box2 {
+      /* width: 200px; */
+      /* width: 200px; */
+      width: 50%;
+      /* height: 200px; */
+      height: 50%;
+      background-color: blue;
+
+      position: absolute;
+      /* left: 0; */
+      /* top: 0; */
+      /* left: 100px;
+      top: 100px; */
+
+      bottom: 0;
+      right: 0;
+    }
+
+    .box3 {
+      width: 200px;
+      height: 200px;
+      background-color: brown;
+    }
+
+    .box4 {
+      width: 400px;
+      height: 400px;
+      background-color: yellow;
+      /* position: relative; */
+    }
+
+    .box5 {
+      width: 300px;
+      height: 300px;
+      margin-left: 100px;
+      background-color: pink;
+      /* position: relative; */
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box1"></div>
+  <!-- <div class="box2">11111</div> -->
+  <div class="box4">
+    <div class="box5">
+      <div class="box2"></div>
+    </div>
+  </div>
+  <div class="box3"></div>
+
+  <pre>
+    布局手段：
+        1. 盒子模型（纵向）
+        2. 浮动（横向）
+        3. 定位
+
+    定位（position）
+        - 通过定位可以将一个元素摆放到页面中的任意位置
+        - CSS中共有四种定位方式：
+            1.相对定位
+            2.绝对定位
+            3.固定定位
+            4.粘滞定位
+
+    绝对定位
+      - 将元素 position属性设置为 absolute 则开启元素的绝对定位
+      - 特点：
+          1. 开启绝对定位后，如果不设置偏移量，元素的位置不会发生改变
+          2. 开启绝对定位后，元素会脱离文档流，同时元素性质发生变化
+          <!-- 3. 绝对定位元素似乎是相对浏览器的窗口来定位的？ -->
+          3. 绝对定位元素是参照于离它最近的开启了定位的祖先元素进行定位，
+              如果所有的祖先元素，都没有开启定位，则相对于浏览器窗口进行定位，
+              所以在开发中，经常在为一个元素开启绝对定位后，同时也给它的父元素开启相对定位
+          4. 绝对定位会提升元素的层级
+
+          3. 绝度定位是参照于它的包含块进行定位的！
+
+          绝对元素的包含块是谁？
+            - 绝对定位元素的包含块是离它最近的开启了定位的祖先元素
+            - 如果所有的祖先都没有开启定位，则它的包含块是？是初始包含块！
+            - 初始化包含块的大小和视口是相同
+  </pre>
+</body>
+
+</html>

@@ -1,0 +1,47 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-03-27 15:14:10
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-03-27 16:11:37
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day03/06_样式的继承.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>样式的继承</title>
+  <style>
+    div {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    我是一个 div
+    <p>
+      我是 div 中的 p 元素 
+      <span>
+        我是 div 中的 p 元素中的 span 元素
+      </span> 
+    </p>
+  </div>
+
+  <pre>
+    样式的继承：
+      - 设置给祖先元素的样式，也会同时应用到其后代上
+      - 继承的存在大大的简化了样式的编写
+        但不是所有的样式都会发生继承
+        所有的布局、背景、边框等相关的样式都不会发生继承
+
+      比如 https://developer.mozilla.org/en-US/docs/Web/CSS/background
+      background 的 Inherited 为 no
+  </pre>
+</body>
+
+</html>

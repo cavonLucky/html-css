@@ -1,0 +1,82 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-04-09 10:53:07
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-04-09 12:42:38
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day08/06_下拉框.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>下拉框</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .outer {
+      font-size: 20px;
+      margin-top: 100px;
+      margin-left: 100px;
+      position: relative;
+      box-sizing: border-box;
+    }
+
+    .outer:hover .content {
+      display: block;
+      top: 49px;
+    }
+
+    .outer:hover .title {
+      border: 1px solid #ccc;
+      border-bottom: none;
+      background-color: #fff;
+      color: #f10215;
+    }
+
+    .title {
+      width: 98px;
+      height: 50px;
+      line-height: 50px;
+      padding: 0 7px;
+      box-sizing: border-box;
+      position: relative;
+      z-index: 1;
+      overflow: hidden;
+      border: 1px solid #fff;
+    }
+
+    .content {
+      width: 200px;
+      height: 200px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      display: none;
+      position: absolute;
+      padding: 10px 7px 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="outer">
+    <div class="title">
+      我是标题
+    </div>
+    <div class="content">
+      我是内容
+    </div>
+  </div>
+  <p>
+    The position CSS property sets how an element is positioned in a document. The top, right, bottom, and
+    left properties determine the final location of positioned elements.
+  </p>
+</body>
+
+</html>

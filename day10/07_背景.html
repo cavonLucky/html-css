@@ -1,0 +1,61 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-04-14 12:28:22
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-04-14 12:56:54
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day10/07_背景.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>背景</title>
+  <style>
+    .box1 {
+      height: 400px;
+      width: 400px;
+      /* background: pink; */
+      /* background: pink url('./images/2.jpeg') no-repeat; */
+      /* background-size: cover; */
+      border: 10px red double;
+
+      /* background-clip: border-box; */
+      /* background-clip: padding-box; */
+
+      padding: 40px;
+      /* background-clip: content-box; */
+
+      /* background-position: 0 0; */
+      /* background-origin: padding-box; */
+      /* background-origin: border-box; */
+      /* background-origin: content-box; */
+
+      /* background: pink url('./images/2.jpeg') no-repeat 0 0/cover border-box content-box; */
+
+      background-image: linear-gradient(0deg, rgb(61, 22, 22), yellow, orange, red);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box1"></div>
+  <pre>
+    background-clip
+      - 设置背景图片显示的区域
+      - 可选值：
+          border-box 默认值，背景会延伸到边框的下边
+          padding-box 背景会延伸到内边距下
+          content-box 背景只会在内容区中显示
+
+    background-origin
+      - padding-box 默认值，背景相对于 padding 定位
+      - border-box 背景相对于边框定位
+      - content-box背景相对于内容区定位
+  </pre>
+</body>
+
+</html>

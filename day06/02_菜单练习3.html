@@ -1,0 +1,91 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-04-02 13:06:43
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-04-02 13:13:22
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day06/02_菜单练习3.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>菜单练习3</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      background-color: #f4f4f4;
+      font: 12px/1.5 "Microsoft YaHei", "Heiti SC", tahoma, arial, "Hiragino Sans GB", "\5B8B\4F53", sans-serif;
+    }
+
+    ul {
+      list-style: none;
+      margin: 100px auto;
+    }
+
+    .menu {
+      width: 190px;
+      height: 470px;
+      background-color: #fff;
+      padding: 10px 0;
+      box-sizing: border-box;
+    }
+
+    .menu > li {
+      height: 25px;
+      line-height: 25px;
+      padding-left: 18px;
+    }
+
+    .menu > li:hover {
+      background-color: #d9d9d9;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 14px;
+      color: #333;
+    }
+
+    a:hover {
+      color: #c81623;
+    }
+
+    span {
+      padding: 0 2px;
+      font-size: 12px;
+      color: #636363;
+    }
+
+
+  </style>
+</head>
+<body>
+  <ul class="menu">
+    <li><a href="#" class="menu_link">家用电器</a></li>
+    <li><a href="#" class="menu_link">手机</a><span class="menu_line">/</span><a href="#" class="menu_link">运营商</a><span class="menu_line">/</span><a href="#" class="menu_link">数码</a></li>
+    <li><a href="#" class="menu_link">电脑</a><span class="menu_line">/</span><a href="#" class="menu_link">办公</a></li>
+    <li><a href="#" class="menu_link">家居</a><span class="menu_line">/</span><a href="#" class="menu_link">家具</a><span class="menu_line">/</span><a href="#" class="menu_link">家装</a><span class="menu_line">/</span><a href="#" class="menu_link">厨貝</a></li>
+    <li><a href="#" class="menu_link">男装</a><span class="menu_line">/</span><a href="#" class="menu_link">女装</a><span class="menu_line">/</span><a href="#" class="menu_link">童装</a><span class="menu_line">/</span><a href="#" class="menu_link">内衣</a></li>
+    <li><a href="#" class="menu_link">美妆</a><span class="menu_line">/</span><a href="#" class="menu_link">个护清洁</a><span class="menu_line">/</span><a href="#" class="menu_link">宠物</a></li>
+    <li><a href="#" class="menu_link">女鞋</a><span class="menu_line">/</span><a href="#" class="menu_link">箱包</a><span class="menu_line">/</span><a href="#" class="menu_link">钟表</a><span class="menu_line">/</span><a href="#" class="menu_link">珠宝</a></li>
+    <li><a href="#" class="menu_link">男鞋</a><span class="menu_line">/</span><a href="#" class="menu_link">运动</a><span class="menu_line">/</span><a href="#" class="menu_link">户外</a></li>
+    <li><a href="#" class="menu_link">房产</a><span class="menu_line">/</span><a href="#" class="menu_link">汽车</a><span class="menu_line">/</span><a href="#" class="menu_link">汽车用品</a></li>
+    <li><a href="#" class="menu_link">母婴</a><span class="menu_line">/</span><a href="#" class="menu_link">玩具乐器</a></li>
+    <li><a href="#" class="menu_link">食品</a><span class="menu_line">/</span><a href="#" class="menu_link">酒类</a><span class="menu_line">/</span><a href="#" class="menu_link">生鲜</a><span class="menu_line">/</span><a href="#" class="menu_link">特产</a></li>
+    <li><a href="#" class="menu_link">艺术</a><span class="menu_line">/</span><a href="#" class="menu_link">礼品鲜花</a><span class="menu_line">/</span><a href="#" class="menu_link">农牧园艺</a></li>
+    <li><a href="#" class="menu_link">医药保健</a><span class="menu_line">/</span><a href="#" class="menu_link">计生情趣</a></li>
+    <li><a href="#" class="menu_link">图书</a><span class="menu_line">/</span><a href="#" class="menu_link">文娱</a><span class="menu_line">/</span><a href="#" class="menu_link">教育</a><span class="menu_line">/</span><a href="#" class="menu_link">电子书</a></li>
+    <li><a href="#" class="menu_link">机票</a><span class="menu_line">/</span><a href="#" class="menu_link">酒店</a><span class="menu_line">/</span><a href="#" class="menu_link">旅游</a><span class="menu_line">/</span><a href="#" class="menu_link">生活</a></li>
+    <li><a href="#" class="menu_link">支付</a><span class="menu_line">/</span><a href="#" class="menu_link">白条</a><span class="menu_line">/</span><a href="#" class="menu_link">保险</a><span class="menu_line">/</span><a href="#" class="menu_link">企业金融</a></li>
+    <li><a href="#" class="menu_link">安装</a><span class="menu_line">/</span><a href="#" class="menu_link">维修</a><span class="menu_line">/</span><a href="#" class="menu_link">清洗</a><span class="menu_line">/</span><a href="#" class="menu_link">二手</a></li>
+    <li><a href="#" class="menu_link">工业品</a><span class="menu_line">/</span><a href="#" class="menu_link">元器件</a></li>
+  </ul>
+</body>
+</html>

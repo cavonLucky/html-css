@@ -1,0 +1,278 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-04-14 15:17:40
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-04-14 17:51:52
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day10/作业/作业.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>日历练习</title>
+  <style>
+    /* * {
+      padding: 0;
+      margin: 0;
+    } */
+
+    .box {
+      display: flex;
+    }
+
+    table {
+      width: 536px;
+      height: 336px;
+      border-collapse: collapse;
+      background: #f2f2f2;
+    }
+
+    th,
+    td {
+      border: 1px solid #e8e8e8;
+    }
+
+    th {
+      line-height: 30px;
+      font-weight: 500;
+      font-size: 18px;
+    }
+
+    td {
+      vertical-align: middle;
+      text-align: center;
+      position: relative;
+      height: 56px;
+      width: 74px;
+      line-height: 20px;
+      box-sizing: border-box;
+    }
+
+    .tag {
+      width: 20px;
+      height: 20px;
+      background: #bf3628;
+      line-height: 20px;
+      font-size: 12px;
+      color: #fbebe8;
+      border-radius: 4px;
+      position: absolute;
+      top: -1px;
+      left: -1px;
+    }
+
+    .solar {
+      font: bold 22px "DejaVu Sans Mono", monospace;
+    }
+
+    .gregorian {
+      font-size: 13px;
+      color: #333;
+    }
+
+    .hot {
+      color: #ba3b2d;
+    }
+
+    .bg {
+      background: #fcf0ef;
+    }
+
+    .tag_bg {
+      background: #bf3628;
+    }
+
+    .current {
+      height: 60px;
+      width: 60px;
+      background: red;
+      line-height: 60px;
+      text-align: center;
+      color: #fff;
+      font: 700 50px "DejaVu Sans Mono", monospace;
+      border-radius: 2px;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box">
+    <h1 class="current">1</h1>
+    <table>
+      <thead>
+        <tr>
+          <th>一</th>
+          <th>二</th>
+          <th>三</th>
+          <th>四</th>
+          <th>五</th>
+          <th class="hot">六</th>
+          <th class="hot">日</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td class="bg">
+            <div class="tag">休</div>
+            <div class="solar">1</div>
+            <div class="gregorian hot">元旦</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="bg">
+            <div class="tag">休</div>
+            <div class="solar">2</div>
+            <div class="gregorian">初五</div>
+          </td>
+          <td>
+            <div class="solar">3</div>
+            <div class="gregorian">初六</div>
+          </td>
+          <td>
+            <div class="solar">4</div>
+            <div class="gregorian">初七</div>
+          </td>
+          <td>
+            <div class="solar">5</div>
+            <div class="gregorian hot">腊八节</div>
+          </td>
+          <td>
+            <div class="solar">6</div>
+            <div class="gregorian">初九</div>
+          </td>
+          <td>
+            <div class="solar">7</div>
+            <div class="gregorian">初十</div>
+          </td>
+          <td>
+            <div class="solar">8</div>
+            <div class="gregorian">十一</div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="solar">9</div>
+            <div class="gregorian">十二</div>
+          </td>
+          <td>
+            <div class="solar">10</div>
+            <div class="gregorian">十三</div>
+          </td>
+          <td>
+            <div class="solar">11</div>
+            <div class="gregorian">十四</div>
+          </td>
+          <td>
+            <div class="solar">12</div>
+            <div class="gregorian">十五</div>
+          </td>
+          <td>
+            <div class="solar">13</div>
+            <div class="gregorian">十六</div>
+          </td>
+          <td>
+            <div class="solar">14</div>
+            <div class="gregorian">十七</div>
+          </td>
+          <td>
+            <div class="solar">15</div>
+            <div class="gregorian">十八</div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="solar">16</div>
+            <div class="gregorian">十九</div>
+          </td>
+          <td>
+            <div class="solar">17</div>
+            <div class="gregorian">二十</div>
+          </td>
+          <td>
+            <div class="solar">18</div>
+            <div class="gregorian">廿一</div>
+          </td>
+          <td>
+            <div class="solar">19</div>
+            <div class="gregorian">甘二</div>
+          </td>
+          <td>
+            <div class="solar">20</div>
+            <div class="gregorian hot">小年</div>
+          </td>
+          <td>
+            <div class="solar">21</div>
+            <div class="gregorian">廿四</div>
+          </td>
+          <td>
+            <div class="solar">22</div>
+            <div class="gregorian">廿五</div>
+          </td>
+        </tr>
+        <tr>
+          <td>
+            <div class="solar">23</div>
+            <div class="gregorian">廿六</div>
+          </td>
+          <td>
+            <div class="solar">24</div>
+            <div class="gregorian">廿七</div>
+          </td>
+          <td>
+            <div class="solar">25</div>
+            <div class="gregorian">甘八</div>
+          </td>
+          <td>
+            <div class="solar">26</div>
+            <div class="gregorian">廿九</div>
+          </td>
+          <td class="bg">
+            <div class="tag">休</div>
+            <div class="solar">27</div>
+            <div class="gregorian hot">除夕</div>
+          </td>
+          <td class="bg">
+            <div class="tag">休</div>
+            <div class="solar">28</div>
+            <div class="gregorian hot">春节</div>
+          </td>
+          <td class="bg">
+            <div class="tag">休</div>
+            <div class="solar">29</div>
+            <div class="gregorian">初二</div>
+          </td>
+        </tr>
+        <tr>
+          <td class="bg">
+            <div class="tag">休</div>
+            <div class="solar">30</div>
+            <div class="gregorian">初三</div>
+          </td>
+          <td class="bg">
+            <div class="tag">休</div>
+            <div class="solar">31</div>
+            <div class="gregorian">初四</div>
+          </td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+          <td></td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
+</body>
+
+</html>

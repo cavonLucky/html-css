@@ -1,0 +1,46 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-03-27 14:26:11
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-03-27 14:29:52
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day03/04_伪类.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>伪类</title>
+  <style>
+    p {
+      width: 400px;
+      margin: 10px 0;
+    }
+
+    /* 可读性、性能差 */
+    /* p:not(:nth-child(3)) {
+      border: 4px solid pink;
+    } */
+
+    p:not(.p3) {
+      border: 4px solid pink;
+    }
+  </style>
+</head>
+
+<body>
+  <p>一往情深深几许？深山夕照深秋雨。</p>
+  <p>半世浮萍随逝水，一宵冷雨葬名花。</p>
+  <p class="p3">不及芙蓉，一片幽情冷处浓。</p>
+  <p>只恐重逢，明明相视更无语。</p>
+
+  <pre>
+    :not
+      - 否定伪类，除了某些元素
+  </pre>
+</body>
+
+</html>

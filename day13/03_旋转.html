@@ -1,0 +1,66 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-04-21 16:10:50
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-04-21 16:31:48
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day13/03_旋转.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>旋转</title>
+  <style>
+    body {
+      perspective: 800px;
+    }
+    .box1 {
+      width: 200px;
+      height: 200px;
+      background-color: tomato;
+      margin: 200px auto;
+
+      transition: all 3s;
+    }
+
+    .box1:hover {
+      /* transform: rotateX(90deg); */
+      /* transform: rotateX(180deg); */
+      /* transform: rotateX(360deg); */
+      /* transform: rotateX(0.5turn); */
+      /* transform: rotateX(1turn); */
+      /* transform: rotateX(3turn); */
+      /* transform: rotateY(1turn); */
+      /* transform: rotateZ(10turn); */
+      /* transform: rotateX(1turn) rotateY(1turn) rotateZ(2turn); */
+      /* transform: translateZ(400px) rotateX(60deg); */
+      /* transform: translateX(400px) rotateZ(60deg); */
+      /* transform: translateX(100px) rotateZ(45deg); */
+      /* transform: rotateZ(60deg) translateX(100px); */
+
+      transform: rotateZ(2turn);
+      transform-origin: 0 0;
+      transform-origin: top center;
+    }
+  </style>
+</head>
+<body>
+  <div class="box1"></div>
+
+  <pre>
+    rotateX 沿x轴旋转
+    rotateY 沿y轴旋转
+    rotateZ 沿z轴旋转
+
+    单位：
+      deg 度
+      turn 圈
+
+
+    transform-origin 指定变形的原点
+  </pre>
+</body>
+</html>

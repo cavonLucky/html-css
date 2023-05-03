@@ -1,0 +1,59 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-04-07 20:28:58
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-04-07 20:42:10
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day08/03_粘滞定位.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>粘滞定位</title>
+  <style>
+    body {
+      height: 40px;
+    }
+
+    .box1 {
+      width: 1200px;
+      height: 40px;
+      background-color: black;
+      margin: 100px auto;
+      position: sticky;
+      top: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box1"></div>
+
+  <p>
+    The position CSS property sets how an element is positioned in a document. The top, right, bottom, and left
+    properties determine the final location of positioned elements.
+  </p>
+  <p>
+    The element is positioned according to the normal flow of the document, and then offset relative to its nearest
+    scrolling ancestor and containing block (nearest block-level ancestor), including table-related elements, based on
+    the values of top, right, bottom, and left. The offset does not affect the position of any other elements.
+  </p>
+  <p>
+    This value always creates a new stacking context. Note that a sticky element "sticks" to its nearest ancestor that
+    has a "scrolling mechanism" (created when overflow is hidden, scroll, auto, or overlay), even if that ancestor isn't
+    the nearest actually scrolling ancestor.
+  </p>
+
+  <pre>
+    将元素的position 设置 了sticky则开启了元素的粘滞定位
+        粘滞定位的特点和相对定位类似
+    定位参照物：
+      粘滞定位相对于离它最近的拥有滚动条祖先元素来定位的
+  </pre>
+</body>
+
+</html>

@@ -1,0 +1,59 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-03-24 18:21:04
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-03-25 13:53:37
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day02/08_CSS简介.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS简介</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <pre>
+    CSS
+      - 层叠样式表
+      - 通过 CSS 可以为网页中的元素设置各种样式，让网页变得更加漂亮
+
+    内联样式（行内样式）：不推荐
+      - 可以直接将 CSS 编写到元素的 style 属性中
+        <span style="color: red; font-size: 16px;">身无彩凤双飞翼，心有灵犀一点通。</span>
+
+      - 一个网页分为三个部分：结构、表现、行为
+        一个设计优良的网页，最好要把结构、表现、行为三者分离
+
+      - 将样式直接编写到 style 属性中，使得代码变得不容易维护，不推荐使用
+
+    内部样式表：亦可
+      - 可以通过 style 标签来创建一个内部样式表
+        <span>身无彩凤双飞翼，心有灵犀一点通。</span>
+        <style>
+          span {
+            color: brown;
+          }
+        </style>
+      - 将样式直接编写到 style 标签中，降低了代码的耦合，使代码易维护
+      - 只能在当前页面中生效，无法在不同的页面中进行复用
+
+    外部样式表：推荐
+      - 将样式编写到外部的 css 文件中，然后通过 link 标签引入外部的样式
+      - 通过外部样式表，将结构和表现完全分离，使代码易与维护。
+        同时代码可以在不同的页面之间进行复用，并且外部文件可以利用到缓存机制，加快用户的访问速度
+
+
+    
+
+  </pre>
+
+
+  <p>
+    我是 p 标签，在 08_CSS简介 页面中
+  </p>
+</body>
+</html>

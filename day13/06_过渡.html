@@ -1,0 +1,63 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-04-22 12:10:38
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-04-22 12:36:41
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day13/06_过渡.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>过渡</title>
+  <style>
+    .box1 {
+      width: 200px;
+      height: 200px;
+      background-color: red;
+      /* transition-property: width; */
+      /* transition-property: width, background-color; */
+      transition-property: all;
+
+      /* transition-duration: 10s; */
+      transition-duration: 5s;
+      /* transition-duration: .5s; */
+      /* transition-duration: 500ms; */
+
+      /* transition-delay: 5s; */
+
+
+    }
+
+    body:hover .box1 {
+      width: 400px;
+      background-color: aqua;
+      margin-left: 400px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box1"></div>
+
+  <pre>
+    transition-property
+      - 应用过渡效果的属性
+      - all 表示所有样式
+
+    transition-duration
+      - 过渡效果所花费的时间
+      - 单位：
+          s 秒
+          ms 毫秒
+
+    transition-delay
+      - 过渡效果的延时
+  </pre>
+</body>
+
+</html>

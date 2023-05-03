@@ -1,0 +1,62 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-04-21 14:18:39
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-04-21 15:47:24
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day13/01_变形.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>变形</title>
+  <style>
+    .box1 {
+      width: 200px;
+      height: 200px;
+      background-color: tomato;
+
+      /* transform: translateX(100px); */
+      /* transform: translateX(50%); */
+      /* transform: translateX(-50%); */
+      /* transform: translateX(-100px); */
+      /* transform: translateY(100px); */
+
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translateX(-50%) translateY(-50%);
+
+    }
+
+    .box2 {
+      width: 200px;
+      height: 200px;
+      background-color: orange;
+    }
+
+    pre {
+      position: relative;
+    }
+  </style>
+</head>
+<body>
+  <div class="box1"></div>
+  <div class="box2"></div>
+
+  <pre >
+    通过变形可以对元素的位置、大小、角度等进行修改
+
+    transform 用来设置变形
+      需要通过不同的变形函数来实现元素的变形
+        translateX() x轴平移
+        translateY() y轴平移
+          - 设置平移时，如果使用百分比单位，百分比是相对于元素自身大小计算
+
+      当我们对元素进行变形时，只会影响到元素自身，不会影响其他元素的位置
+  </pre>
+</body>
+</html>

@@ -1,0 +1,82 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-04-22 17:44:51
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-04-23 11:06:34
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day14/03_精灵动画.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>精灵动画</title>
+  <style>
+    .box1 {
+      height: 271px;
+      width: 132px;
+      background-color: aqua;
+      background-image: url('./images/bigtap-mitu-queue-big.png');
+      animation: mitu 5s steps(4) infinite;
+    }
+
+    .box2 {
+      height: 271px;
+      width: 132px;
+      background-color: aqua;
+      background-image: url('./images/bigtap-mitu-queue-big2.png');
+      /* transition: background-position .3s steps(3); */
+
+      /* 当background-position设置为 -396 时，此时动画会像流水一样，跳跃不对导致的 */
+      /* animation: mitu 2s steps(4) infinite; */
+
+      /* 当background-position设置为 -396 时，此时动画不会出现第4个动作，背景定位属性宽度导致的 */
+      /* animation: mitu 2s steps(3) infinite; */
+
+      /* 当background-position设置为 -396 时，此时动画不会出现第1个动作，背景定位属性宽度导致的 */
+      /* animation: mitu 10s steps(3, start) infinite; */
+
+      /* 当background-position设置为 -528 时，就正常了 */
+      animation: mitu 5s steps(4) infinite;
+    }
+
+    /* .box1:hover {
+      background-position: -396px 0;
+    } */
+
+    /* 关键帧 -132 -264 -396 */
+    @keyframes mitu {
+      from {
+        background-position: 0 0;
+      }
+
+      to {
+        /* background-position: -396px 0; */
+
+        background-position: -528px 0;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box1"></div>
+  <div class="box2"></div>
+
+  <pre>
+    从 初始状态到 from 状态 的跳跃不算第一步
+    例如：
+    从初始状态 --> mitu1 第0步
+    从 mitu1 --> mitu2 第1步
+    从 mitu2 --> mitu3 第2步
+    从 mitu3 --> mitu4 第3步
+    从 mitu4 --> mitu1 第4步
+
+    所以 steps 设置为 4
+  </pre>
+</body>
+
+</html>

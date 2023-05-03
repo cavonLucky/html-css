@@ -1,0 +1,84 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-04-22 17:35:58
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-04-23 10:49:51
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day14/02_动画.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>动画</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+    }
+
+    .box1 {
+      width: 100px;
+      height: 100px;
+      background-color: tomato;
+      /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+      animation: move 10s steps(2) 2s;
+    }
+
+    .box2 {
+      width: 100px;
+      height: 100px;
+      background-color: green;
+      /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+      animation: move 10s steps(2) 2s forwards;
+    }
+
+    @keyframes move {
+      from {
+        margin-left: 50px;
+        background-color: aqua;
+      }
+
+      /* 50% {
+        margin-left: 200px;
+        background-color: yellow;
+      }
+
+      75% {
+        margin-left: 400px;
+        background-color: green;
+      } */
+
+      to {
+        margin-left: 500px;
+        background-color: orangered;
+      }
+    }
+
+    .box3 {
+      height: 800px;
+      width: 4px;
+      position: absolute;
+      left: 500px;
+      top: 0;
+      background-color: blue;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="box1"></div>
+  <div class="box2"></div>
+  <div class="box3"></div>
+
+  <pre>
+    设置 steps 时，from 第一下不算是一步
+
+    forwards 停留在 to 的位置
+  </pre>
+</body>
+
+</html>

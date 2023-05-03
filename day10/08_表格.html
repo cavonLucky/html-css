@@ -1,0 +1,124 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-04-14 12:58:56
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-04-14 13:35:21
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day10/08_表格.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>表格</title>
+  <style>
+    table {
+      border: 1px solid #222;
+      width: 80%;
+      border-collapse: collapse;
+    }
+
+    caption {
+      font-size: 22px;
+      font-weight: bold;
+    }
+
+    th,
+    td {
+      border: 1px solid #222;
+      text-align: center;
+    }
+  </style>
+</head>
+
+<body>
+  <table>
+
+    <caption>学生列表</caption>
+
+    <!-- 表格的头部 -->
+    <thead>
+      <!-- tr 表示一行 -->
+      <tr>
+        <!-- th 用来表示表头中的单元格 -->
+        <th>学号</th>
+        <th>姓名</th>
+        <th>性别</th>
+        <th>年龄</th>
+        <th>住址</th>
+      </tr>
+    </thead>
+
+    <!-- 表格主体 -->
+    <tbody>
+      <tr>
+        <!-- td 表示一个单元格 -->
+        <td>1</td>
+        <td>孙悟空</td>
+        <td>男</td>
+        <td>18</td>
+        <td rowspan="2">花果山</td>
+      </tr>
+      <tr>
+        <!-- td 表示一个单元格 -->
+        <td>2</td>
+        <td>猪八戒</td>
+        <td>男</td>
+        <td>28</td>
+        <!-- <td>高老庄</td> -->
+      </tr>
+      <tr>
+        <!-- td 表示一个单元格 -->
+        <td>3</td>
+        <td>沙和尚</td>
+        <td>男</td>
+        <td>38</td>
+        <td>流沙河</td>
+      </tr>
+      <tr>
+        <!-- td 表示一个单元格 -->
+        <td>4</td>
+        <td>唐僧</td>
+        <td>男</td>
+        <td>20</td>
+        <td>洛阳</td>
+      </tr>
+      <tr>
+        <!-- td 表示一个单元格 -->
+        <td>5</td>
+        <td>白龙马</td>
+        <td>男</td>
+        <td>18</td>
+        <td>西海</td>
+      </tr>
+    </tbody>
+
+    <!-- 表格的底部 -->
+    <tfoot>
+      <tr>
+        <!-- td 表示一个单元格 -->
+        <td colspan="3"></td>
+        <!-- <td></td>
+        <td></td> -->
+        <td>合计：</td>
+        <td>5人</td>
+      </tr>
+    </tfoot>
+  </table>
+  <pre>
+    表格（table）
+      - 和日常生活中使用的表格一样，在网页中也可以创建表格
+      - 可以通过表格来表示一些格式化的数据
+
+    使用 table 来创建一个表格
+
+    colspan 横向的合并单元格
+    rowspan 纵向的合并单元格
+
+  </pre>
+</body>
+
+</html>

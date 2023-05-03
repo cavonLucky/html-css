@@ -1,0 +1,54 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-03-31 14:40:11
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-03-31 15:51:28
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day05/07_文字.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文字</title>
+  <style>
+    p {
+      font-size: 40px;
+      border: 1px solid darkorange;
+    }
+
+    span {
+      border: 1px seagreen solid;
+
+      font-size: 20px;
+      /* font-size: 40px; */
+      /* vertical-align: baseline; */
+      /* vertical-align: top; */
+      /* vertical-align: bottom; */
+      vertical-align: middle;
+    }
+  </style>
+</head>
+<body>
+  <p>
+    身无彩凤双飞翼，<span>心</span>x有灵犀一点通。
+  </p>
+
+  <pre>
+    在网页中，每个文字被显示时都会有一个文本框与之对应
+      当我们设置元素的 font-size 时，实际上就是在设置文字框的大小
+      在文本框存在一个位置叫做基线（baseline）
+
+    文字的垂直对齐：
+      - 默认每个文字和元素在垂直方向都是沿着基线对齐的
+      - 可选值：
+          baseline 默认值，子元素和父元素的基线对齐
+          top 子元素文本框的顶部和父元素文本框的顶部对齐
+          bottom 子元素文本框的底部和父元素文本框的底部对齐
+          middle 将元素的中线和父元素的基线高度 + x高度一半的位置对齐
+      - 开发中经常通过 vertical-align 来消除图片下边的空白
+  </pre>
+</body>
+</html>

@@ -1,0 +1,104 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-04-23 15:08:25
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-04-23 15:45:31
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day14/06_网格布局.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>网格布局</title>
+  <style>
+    * {
+      padding: 0;
+      margin: 0;
+    }
+
+    .outer {
+      width: 800px;
+      border: 10px solid blue;
+
+      display: grid;
+
+      /* grid-template-columns: 200px 200px; */
+      /* grid-template-columns: 200px 200px auto; */
+      /* grid-template-columns: 200px 200px 200px auto; */
+      /* grid-template-columns: 1fr 2fr 1fr 1fr; */
+
+      grid-template-columns: repeat(2, 1fr 2fr);
+      /* grid-template-columns: 1fr 2fr 1fr 2fr; */
+      /* grid-template-columns: 1fr repeat(2, 1fr 2fr); */
+
+      grid-template-rows: 100px 200px 100px;
+    }
+
+
+
+    .box1 {
+      background-color: red;
+    }
+
+    .box2 {
+      background-color: orange;
+
+      grid-column-start: 2;
+      grid-column-end: 4;
+      grid-column-end: -1;
+      grid-column-end: span 2;
+      grid-row-start: 1;
+      grid-row-end: 3;
+    }
+
+    .box3 {
+      background-color: yellow;
+    }
+
+    .box4 {
+      background-color: green;
+    }
+
+    .box5 {
+      background-color: cyan;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="outer">
+    <div class="box1">box1</div>
+    <div class="box2">box2</div>
+    <div class="box3">box3</div>
+    <div class="box4">box4</div>
+    <div class="box5">box5</div>
+  </div>
+
+  <pre>
+    网格容器
+      - 要使用网格布局必须先设置网格容器
+      - 使用 display: grid; 或 display: inline-grid;
+      - 默认情况下，我们开启的是一个单列的网格布局
+
+      grid-template-columns 用来设置网格布局的列数
+        - repeat() 来重复的设置
+
+      grid-template-rows 用来设置网格布局的行数
+
+      grid-column-start 网格列的起始位置
+      grid-column-end 网格列的结束位置
+
+      grid-row-start 网格行的起始位置
+      grid-row-end 网格行的结束位置
+
+    网格项
+      - 网格容器的子元素都会自动变为网格项
+      
+  </pre>
+</body>
+
+</html>

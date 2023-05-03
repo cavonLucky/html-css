@@ -1,0 +1,77 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-03-25 15:23:26
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-03-25 16:07:53
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day02/10_基本选择器.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>基本选择器</title>
+  <style>
+    /* 元素选择器 */
+    h1 {
+      color: brown;
+    }
+
+    /* id 选择器 */
+    #p1 {
+      font-size: 18px;
+      font-style: oblique 50deg;
+    }
+
+    /* 类选择器 */
+    .p2 {
+      background: blueviolet;
+      border: 4px solid gold;
+    }
+
+    /* 通配选择器 */
+    * {
+      text-decoration:underline red;
+    }
+  </style>
+</head>
+
+<body>
+  <pre>
+    通过 CSS 选择器，可以选中页面中的指定元素，从而为这些元素设置样式。
+    CSS 中为我们提供了大量的选择器，但是在项目中并不是所有的选择器都很常用
+
+    基本选择器：
+      元素选择器：
+        - 根据标签名选中多个元素
+        - 例子：p{}  div{}  h1{}
+
+      id 选择器：
+        - 根据元素的 id 属性选中一个元素
+        - 语法：#id{}
+        - 列子：#p1{} #box{} #head{}
+
+      类选择器：常用
+        - 根据元素的 class 属性选中元素
+        - 语法：.class{}
+        - - 列子：.p1{} .box{} .head{}
+
+          class 属性和 id 类似，每一个元素都可以指定，用来为元素进行分类，
+          和 di 不同，可以为多个元素指定相同的 class ，拥有同一个 class 的元素可以说它们是用一类元素，
+          也可以同时为一个元素指定多个 class
+
+      通配选择器：
+        - 选择页面中所有的元素
+        - *{}
+  </pre>
+
+  <h1>纳兰容若</h1>
+  <p id="p1" class="p2">家家争唱饮水词，纳兰心事几人知。</p>
+  <p class="p2">红豆生南国，春来发几枝。</p>
+  <div>愿君多采撷，此物最相思。</div>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-03-28 14:38:01
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-03-28 14:53:22
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day03/08_a的伪类.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>a的伪类</title>
+  <style>
+    /* 正常的链接 */
+    a:link {
+      color: red;
+    }
+
+    /* 访问过的 */
+    a:visited {
+      color: greenyellow;
+    }
+
+    /* 鼠标移入 */
+    a:hover {
+      color: orange;
+    }
+
+    /* 鼠标点击 */
+    a:active {
+      color: deeppink;
+    }
+  </style>
+</head>
+
+<body>
+  <a href="#">访问过的</a>
+  <a href="#">未访问过的</a>
+  <pre>
+    如果把 a:hover、a:active 放在 a:link、a:visited前面会失效，
+    一般按照顺序写：l v h a
+  </pre>
+</body>
+
+</html>

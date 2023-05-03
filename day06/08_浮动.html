@@ -1,0 +1,115 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-04-03 14:21:58
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-04-03 16:08:42
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day06/08_浮动.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>浮动</title>
+  <style>
+    .box1 {
+      height: 200px;
+      /* width: 200px; */
+      background-color: red;
+      float: left;
+      /* float: right; */
+      width: 500px;
+    }
+
+    .box2 {
+      height: 200px;
+      width: 200px;
+      background-color: green;
+      float: left;
+
+      width: 500px;
+    }
+
+    .box3 {
+      height: 200px;
+      width: 200px;
+      background-color: blue;
+      /* float: left; */
+      /* width: 500px; */
+      float: right;
+    }
+
+    .box4 {
+      width: 200px;
+      height: 200px;
+      background-color: black;
+      float: left;
+    }
+
+    p {
+      background-color: yellow;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="box1"></div>
+  <div class="box2"></div>
+  <div class="box3"></div>
+
+  <div style="clear: both;"></div>
+
+  <hr>
+  <div class="box4"></div>
+  <p>今天下雨又打雷还闪电</p>
+  <p>
+    Originally for floating images inside blocks of text, the float property became one of the most commonly used tools
+    for creating multiple column layouts on webpages. With the advent of flexbox and grid it's now returned to its
+    original purpose, as this article explains.
+  </p>
+  <p>
+    The float property was introduced to allow web developers to implement layouts involving an image floating inside a
+    column of text, with the text wrapping around the left or right of it. The kind of thing you might get in a
+    newspaper layout.
+
+    But web developers quickly realized that you can float anything, not just images, so the use of float broadened, for
+    example, to fun layout effects such as drop-caps.
+
+    Floats have commonly been used to create entire web site layouts featuring multiple columns of information floated
+    so they sit alongside one another (the default behavior would be for the columns to sit below one another in the
+    same order as they appear in the source). There are newer, better layout techniques available. Using floats in this
+    way should be regarded as a legacy technique.
+
+    In this article we'll just concentrate on the proper uses of floats.
+  </p>
+
+
+
+
+
+
+  <pre>
+    浮动（float）
+      - 是一种传统的网页布局方式
+      - 通过浮动可以使得元素脱离文档流而横向排列
+
+    float
+      - 设置元素浮动
+      - 可选值
+          none，默认值，元素不浮动
+          left 向左浮动
+          right 向右浮动
+      - 浮动的特点
+          1. 设置浮动后，元素脱离文档流，其后元素会自动上移
+          2. 设置浮动后，元素会向其包含块的左侧或右侧移动
+          3. 如果一行之内无法容纳所有的浮动元素，则后边的的元素会自动换到下一行
+          4. 浮动元素不会超过它上边浮动的兄弟元素，最多一边齐
+          5. 浮动元素不会盖住文字，文字会环绕在浮动元素的周围
+  </pre>
+</body>
+
+</html>

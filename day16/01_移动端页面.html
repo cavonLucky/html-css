@@ -1,0 +1,287 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-04-24 19:17:27
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-04-30 21:06:10
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day16/01_移动端页面.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>移动端页面</title>
+  <link rel="stylesheet" href="./css/all.css">
+  <link rel="stylesheet" href="./css/index.css">
+</head>
+
+<body>
+
+  <!-- 底部菜单 -->
+  <div class="menu">
+    <ul>
+      <li>
+        <a href="#" class="active">
+          <i class="fa-solid fa-home"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa-solid fa-user-circle"></i>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <i class="fa-solid fa-heart"></i>
+        </a>
+      </li>
+      <li class="shopping-cart">
+        <a href="#">
+          <i class="fa-solid fa-shopping-bag"></i>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <form action="#" class="search-form">
+    <input type="text" placeholder="请输入关键字">
+    <i class="fa-solid fa-search"></i>
+    <i class="fa-solid fa-sliders"></i>
+  </form>
+
+  <!-- 轮播图 -->
+  <div class="page-hero">
+    <ul>
+      <li class="img-list">
+        <a href="#">
+          <img src="./images/1.png" alt="">
+          <h2>首订享受8折优惠！</h2>
+        </a>
+      </li>
+      <li class="img-list">
+        <a href="#">
+          <img src="./images/1.png" alt="">
+          <h2>首订享受8折优惠！</h2>
+        </a>
+      </li>
+      <li class="img-list">
+        <a href="#">
+          <img src="./images/1.png" alt="">
+          <h2>首订享受8折优惠！</h2>
+        </a>
+      </li>
+      <li class="img-list">
+        <a href="#">
+          <img src="./images/1.png" alt="">
+          <h2>首订享受8折优惠！</h2>
+        </a>
+      </li>
+      <li class="img-list">
+        <a href="#">
+          <img src="./images/1.png" alt="">
+          <h2>首订享受8折优惠！</h2>
+        </a>
+      </li>
+    </ul>
+    <!-- 导航小点 -->
+    <div class="pointer">
+      <a href="javascript:;"></a>
+      <a href="javascript:;" class="active"></a>
+      <a href="javascript:;"></a>
+      <a href="javascript:;"></a>
+      <a href="javascript:;"></a>
+    </div>
+  </div>
+
+  <!-- 分类列表 -->
+  <div class="cate-list">
+    <header>
+      <h3>分类</h3>
+      <a href="#">
+        <i class="fa-solid fa-angle-right"></i>
+      </a>
+    </header>
+    <ul class="cate-inner">
+      <li>
+        <a href="#">
+          <span class="cate-icon"><i class="fa-solid fa-carrot"></i></span>
+          <span class="cate-text">蔬菜</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="cate-icon"><i class="fa-solid fa-apple-whole"></i></span>
+          <span class="cate-text">水果</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="cate-icon"><i class="fa-solid fa-carrot"></i></span>
+          <span class="cate-text">饮料</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="cate-icon"><i class="fa-solid fa-carrot"></i></span>
+          <span class="cate-text">蔬菜</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="cate-icon"><i class="fa-solid fa-carrot"></i></span>
+          <span class="cate-text">蔬菜</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="cate-icon"><i class="fa-solid fa-carrot"></i></span>
+          <span class="cate-text">蔬菜</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="cate-icon"><i class="fa-solid fa-carrot"></i></span>
+          <span class="cate-text">蔬菜</span>
+        </a>
+      </li>
+      <li>
+        <a href="#">
+          <span class="cate-icon"><i class="fa-solid fa-carrot"></i></span>
+          <span class="cate-text">蔬菜</span>
+        </a>
+      </li>
+    </ul>
+  </div>
+
+  <!-- 特色产品 -->
+  <div class="featured-products">
+    <header>
+      <h3>特色产品</h3>
+      <a href="#">
+        <i class="fa-solid fa-angle-right"></i>
+      </a>
+    </header>
+
+    <ul class="products">
+      <li>
+        <div class="products-info">
+          <a href="#">
+            <div class="products-bg"></div>
+            <img src="./images/peach.png" alt="桃">
+            <span class="price">¥8.00</span>
+            <span class="title">鲜桃</span>
+            <span class="unit">公斤</span>
+          </a>
+          <!-- 线性心形-表示没有收藏 -->
+          <i class="fa-regular fa-heart"></i>
+        </div>
+
+        <div class="add-cart">
+          <a href="#">
+            <i class="fa-solid fa-shopping-bag"></i>
+            加入购物车
+          </a>
+        </div>
+      </li>
+      <li>
+        <div class="products-info">
+          <a href="#">
+            <div class="products-bg"></div>
+            <img src="./images/peach.png" alt="桃">
+            <span class="price">¥8.00</span>
+            <span class="title">鲜桃</span>
+            <span class="unit">公斤</span>
+          </a>
+          <!-- 实心心形-表示有收藏 -->
+          <i class="fa-solid fa-heart"></i>
+        </div>
+        <div class="add-product">
+          <i class="fa-solid fa-subtract"></i>
+          <span class="count">1</span>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+      </li>
+      <li>
+        <div class="products-info">
+          <a href="#">
+            <div class="products-bg"></div>
+            <img src="./images/peach.png" alt="桃">
+            <span class="price">¥8.00</span>
+            <span class="title">鲜桃</span>
+            <span class="unit">公斤</span>
+          </a>
+          <!-- 线性心形-表示没有收藏 -->
+          <i class="fa-regular fa-heart"></i>
+        </div>
+
+        <div class="add-cart">
+          <a href="#">
+            <i class="fa-solid fa-shopping-bag"></i>
+            加入购物车
+          </a>
+        </div>
+      </li>
+      <li>
+        <div class="products-info">
+          <a href="#">
+            <div class="products-bg"></div>
+            <img src="./images/peach.png" alt="桃">
+            <span class="price">¥8.00</span>
+            <span class="title">鲜桃</span>
+            <span class="unit">公斤</span>
+          </a>
+          <!-- 实心心形-表示有收藏 -->
+          <i class="fa-solid fa-heart"></i>
+        </div>
+        <div class="add-product">
+          <i class="fa-solid fa-subtract"></i>
+          <span class="count">1</span>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+      </li>
+      <li>
+        <div class="products-info">
+          <a href="#">
+            <div class="products-bg"></div>
+            <img src="./images/peach.png" alt="桃">
+            <span class="price">¥8.00</span>
+            <span class="title">鲜桃</span>
+            <span class="unit">公斤</span>
+          </a>
+          <!-- 线性心形-表示没有收藏 -->
+          <i class="fa-regular fa-heart"></i>
+        </div>
+
+        <div class="add-cart">
+          <a href="#">
+            <i class="fa-solid fa-shopping-bag"></i>
+            加入购物车
+          </a>
+        </div>
+      </li>
+      <li>
+        <div class="products-info">
+          <a href="#">
+            <div class="products-bg"></div>
+            <img src="./images/peach.png" alt="桃">
+            <span class="price">¥8.00</span>
+            <span class="title">鲜桃</span>
+            <span class="unit">公斤</span>
+          </a>
+          <!-- 实心心形-表示有收藏 -->
+          <i class="fa-solid fa-heart"></i>
+        </div>
+        <div class="add-product">
+          <i class="fa-solid fa-subtract"></i>
+          <span class="count">1</span>
+          <i class="fa-solid fa-plus"></i>
+        </div>
+      </li>
+    </ul>
+  </div>
+</body>
+
+</html>

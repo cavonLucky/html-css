@@ -1,0 +1,51 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-03-29 14:16:10
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-03-29 14:38:01
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day04/07_外边距.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>外边距</title>
+  <style>
+    .box1 {
+      width: 200px;
+      height: 200px;
+      background-color: aqua;
+      /* 挤自己 */
+      /* margin-top: 100px; */
+      /* margin-left: 100px; */
+      /* 挤别人 */
+      /* margin-bottom: 100px; */
+      /* margin-right: 100px; */
+
+      margin: 10px 20px 30px 40px;
+    }
+    .box2 {
+      width: 200px;
+      height: 200px;
+      background-color: #46d;
+    }
+  </style>
+</head>
+<body>
+  <div class="box1"></div>
+  <div class="box2"></div>
+  <pre>
+    外边距同样有四个方向：
+      margin-top    上外边距，值越大元素越靠下
+      margin-right  右外边距，
+      margin-bottom 下外边距，
+      margin-left   左外边距，值越大元素越靠右
+        - 由于我们的浏览器默认是按照自左向右，自上向下的顺序来排列元素的，
+          所以当我们设置上和左外边距时，是改变元素自身的位置，
+          但是设置下和右时，会改变其他元素的位置
+  </pre>
+</body>
+</html>

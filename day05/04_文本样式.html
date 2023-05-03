@@ -1,0 +1,44 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-03-31 14:03:30
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-03-31 14:10:14
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day05/05_文本样式.html
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>文本样式</title>
+  <style>
+    p {
+      background-color: darkcyan;
+      width: 100px;
+      /* 禁止文字的自动换行 */
+      white-space: nowrap;
+      /* 禁止文字溢出 */
+      overflow: hidden;
+      /* 溢出文字显示省略号 */
+      text-overflow: ellipsis;
+    }
+  </style>
+</head>
+
+<body>
+
+  <p>
+    今天有太阳，但是不大，这个季节让人很舒服！
+  </p>
+
+
+  <pre>
+    white-space: nowrap;      // 禁止文字的自动换行
+    overflow: hidden;         // 禁止文字溢出
+    text-overflow: ellipsis;  // 溢出文字显示省略号
+  </pre>
+</body>
+
+</html>

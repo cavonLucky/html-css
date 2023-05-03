@@ -1,0 +1,75 @@
+<!--
+ * @Author: cavonLucky 425247833@qq.com
+ * @Date: 2023-04-23 16:58:45
+ * @LastEditors: cavonLucky 425247833@qq.com
+ * @LastEditTime: 2023-04-23 17:04:41
+ * @FilePath: /bilibili-lilichao-teacher/html-css/day14/07_网格练习2.html
+ * @Description: 这是默认设置,请设置`customMade`, 打开koroFileHeader查看配置 进行设置: https://github.com/OBKoro1/koro1FileHeader/wiki/%E9%85%8D%E7%BD%AE
+-->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>网格练习</title>
+  <style>
+    .outer {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      grid-template-rows: 150px 200px 200px 150px;
+      margin: 0 200px;
+    }
+
+    .box1 {
+      border: 2px solid red;
+      grid-column-start: 1;
+      grid-column-end: -1;
+    }
+
+    .box2 {
+      border: 2px solid orange;
+      grid-row-start: 2;
+      grid-row-end: 4;
+    }
+
+    .box3 {
+      border: 2px solid yellow;
+      grid-column-start: 2;
+      grid-column-end: -1;
+    }
+
+    .box4 {
+      border: 2px solid green;
+    }
+
+    .box5 {
+      border: 2px solid cyan;
+    }
+
+    .box6 {
+      border: 2px solid blue;
+    }
+
+    .box7 {
+      border: 2px solid purple;
+      grid-column-start: 1;
+      grid-column-end: -1;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="outer">
+    <div class="box1">头部</div>
+    <div class="box2">菜单</div>
+    <div class="box3">上部分</div>
+    <div class="box4">图片</div>
+    <div class="box5">图片</div>
+    <div class="box6">图片</div>
+    <div class="box7">底部</div>
+  </div>
+</body>
+
+</html>
